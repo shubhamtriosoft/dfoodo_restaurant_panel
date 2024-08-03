@@ -159,16 +159,16 @@ const SeoWebsite = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th style={{ color: "#F58634", fontWeight: "600",whiteSpace:"nowrap" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600",whiteSpace:"nowrap" }}>
                     Create Date
                   </th>
 
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>Title</th>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>Title</th>
 
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Description
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Keywords
                   </th>
                 </tr>

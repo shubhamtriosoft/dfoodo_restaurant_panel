@@ -625,7 +625,7 @@ function Analytics() {
       type: "donut",
     },
     labels: ["Direct Reservation", "Walk -In", "Reservation"],
-    colors: ["#F58634", "#509D30", "#67d880"],
+    colors: ["#3268C1", "#509D30", "#67d880"],
     legend: {
       show: false,
     },
@@ -880,10 +880,10 @@ function Analytics() {
     stroke: {
       curve: "straight",
     },
-    colors: ["#509D30", "#F58634", "#FF1212", "#A098AE"],
+    colors: ["#509D30", "#3268C1", "#FF1212", "#A098AE"],
     markers: {
       size: 6,
-      colors: ["#509D30", "#F58634", "#FF1212", "#A098AE"],
+      colors: ["#509D30", "#3268C1", "#FF1212", "#A098AE"],
       strokeColors: "#fff",
       strokeWidth: 0,
       hover: {

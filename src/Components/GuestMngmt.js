@@ -506,7 +506,7 @@ function GuestMngmt() {
 
           <p>
             Are you sure you want to mark{" "}
-            <span style={{ color: "#f58634" }}>{clickedButton}</span> as VIP
+            <span style={{ color: "#3268C1" }}>{clickedButton}</span> as VIP
             guest?
           </p>
         </Modal.Body>

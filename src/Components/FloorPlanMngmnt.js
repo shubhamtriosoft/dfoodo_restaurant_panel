@@ -316,7 +316,7 @@ function FloorPlanMngmnt() {
 
           <p>
             Are you sure you want to mark{" "}
-            <span style={{ color: "#f58634" }}>{clickedButton}</span> as
+            <span style={{ color: "#3268C1" }}>{clickedButton}</span> as
             Default?
           </p>
         </Modal.Body>

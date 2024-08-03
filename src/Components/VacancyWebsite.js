@@ -279,22 +279,22 @@ const VacancyWebsite = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Sr. No.
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Apply Date
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>Name</th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>Email</th>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>Name</th>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>Email</th>
 
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Contact Info
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Position
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}></th>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}></th>
                 </tr>
               </thead>
               <tbody>

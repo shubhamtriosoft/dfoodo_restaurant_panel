@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #f58634;
+  --primary-color: #3268C1;
   --secondary-color: #f6f5f5;
 
   /* Background color */
@@ -73,7 +73,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f58634;
+  background: #3268C1;
   border-radius: 6px;
 }
 

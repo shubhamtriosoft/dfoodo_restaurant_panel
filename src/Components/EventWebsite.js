@@ -170,15 +170,15 @@ const EventWebsite = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Create Date
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>Image</th>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>Image</th>
 
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Event Name /Date Time
                   </th>
-                  <th style={{ color: "#F58634", fontWeight: "600" }}>
+                  <th style={{ color: "#3268C1", fontWeight: "600" }}>
                     Description
                   </th>
                 </tr>

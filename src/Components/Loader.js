@@ -25,7 +25,7 @@ function Loader() {
                 cy="64"
                 r="8"
                 transform="rotate(-40,64,64) translate(0,-56)"
-                fill="#F58634"
+                fill="#3268C1"
               />
               <circle
                 className="smiley__eye2"
@@ -33,12 +33,12 @@ function Loader() {
                 cy="64"
                 r="8"
                 transform="rotate(40,64,64) translate(0,-56)"
-                fill="#F58634"
+                fill="#3268C1"
               />
             </clipPath>
             <linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#F58634" />
-              <stop offset="100%" stopColor="#F58634" />
+              <stop offset="0%" stopColor="#3268C1" />
+              <stop offset="100%" stopColor="#3268C1" />
             </linearGradient>
             <mask id="smiley-mask">
               <rect
@@ -57,12 +57,12 @@ function Loader() {
           >
             <g>
               <rect
-                fill="#F58634"
+                fill="#3268C1"
                 width="128"
                 height="64"
                 clipPath="url(#smiley-eyes)"
               />
-              <g fill="none" stroke="#F58634">
+              <g fill="none" stroke="#3268C1">
                 <circle
                   className="smiley__mouth1"
                   cx="64"
@@ -81,12 +81,12 @@ function Loader() {
             </g>
             <g mask="url(#smiley-mask)">
               <rect
-                fill="#F58634"
+                fill="#3268C1"
                 width="128"
                 height="64"
                 clipPath="url(#smiley-eyes)"
               />
-              <g fill="none" stroke="#F58634">
+              <g fill="none" stroke="#3268C1">
                 <circle
                   className="smiley__mouth1"
                   cx="64"
