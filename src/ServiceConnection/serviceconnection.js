@@ -1,8 +1,8 @@
 import axios from "axios";
 import { retrieveData } from "../LocalConnection/LocalConnection.js";
 const appauth_key = "barlays@2029";
-let APL_LINK = "http://192.168.1.5:8000/";
-APL_LINK = "https://back.barleys.se/";  
+let APL_LINK = "http://192.168.1.6:8000/";
+// APL_LINK = "https://back.barleys.se/";  
 let Website_URL = "https://www.barleys.se/";
 let local_server_link_react = APL_LINK + "api/admin_link/";
 let feedback_online_link = "https://www.wowreviews.co/Adminmaster/";

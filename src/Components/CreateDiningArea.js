@@ -1244,7 +1244,7 @@ export default function CreateDiningArea(CALLID) {
               let max_person = split_data[4];
               let priority_level = split_data[5];
               let starnder_type = type_save_single.value;
-              let type_name = e.target.value;
+              let type_name = split_data[7];
               let prsent_color = split_data[8];
 
               obj.globalCompositeOperation =
