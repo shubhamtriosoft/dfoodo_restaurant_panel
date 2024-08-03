@@ -1,0 +1,104 @@
+.reportTabs {
+  width: 150px;
+  height: 34px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-30deg);
+  box-shadow: 0px 0px 3.12101149559021px 0px #00000040;
+  border-bottom: 2px solid var(--grey-bg);
+  cursor: pointer;
+}
+.reportTabs > p {
+  transform: skew(30deg);
+  margin: 0;
+  font-weight: 500;
+}
+
+.selectedReports {
+  background-color: var(--grey-bg);
+  color: var(--white-text);
+}
+
+.btnSearch2 {
+  background-color: transparent !important;
+  padding: 0.3rem 0.2rem !important;
+}
+
+.secondaryBg {
+  background-color: var(--secondary-bg) !important;
+}
+
+.alignCol {
+  margin-right: 0;
+  margin-left: auto;
+}
+.searchBt2 {
+  font-size: 13.5px;
+}
+
+.pageActionBtns {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.CSVBTN {
+  box-shadow: 0px 1px 3px 0px #00000033;
+  box-shadow: 0px 2px 1px 0px #0000001f;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+}
+
+.printReposrr {
+  border: none;
+  background-color: transparent;
+}
+
+.resrvReportsCards_card {
+  box-shadow: 0px 0px 1.9823075532913208px 0px #00000040;
+  box-shadow: 0px 3.999999761581421px 3.999999761581421px 0px #00000040;
+  background-color: var(--secondary-bg);
+  padding: 1rem;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.resrvReportsCards_card p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.resrvReportsCards {
+  margin: 2.5rem 0;
+}
+
+.sprtor {
+  color: var(--primary-color);
+}
+
+.pymntMode {
+  border: 1px solid var(--green-bg);
+  padding: 2px 0.5rem;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.flexForCount {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-item:not(:first-child) .page-link {
+  padding: 0.3rem 0.5rem;
+}

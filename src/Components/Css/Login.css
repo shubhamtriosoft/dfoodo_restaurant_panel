@@ -1,0 +1,596 @@
+.login {
+  height: 100vh;
+  width: 100%;
+}
+
+.login_container {
+  width: 100%;
+  height: 100%;
+}
+
+.loginLeft {
+  position: relative;
+  background-image: url("../../assets/loginImg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginLeft::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.loginLeft img {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.loginText {
+  color: var(--white-text);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginText h5 {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.loginText button {
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.2rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.loginText button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-text);
+}
+
+.InputDiv {
+  border: 1px solid var(--light-border);
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  position: relative;
+  /* Added for positioning the icon */
+}
+
+.InputDiv img {
+  width: 1.7rem;
+}
+
+.InputDiv input {
+  border: none;
+  outline: none;
+  height: 35px;
+  color: var(--light-text);
+  width: 100%;
+  margin-left: 15px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+#loginFormData {
+  width: 100%;
+}
+
+.loginBtn {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  color: var(--white-text);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+
+  margin-top: 2.3rem;
+}
+
+.loginBtn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.loginRight {
+  height: 100%;
+}
+
+.loginFormContainer {
+  width: 100%;
+}
+
+.loginFormCol {
+  display: flex;
+  align-items: center;
+  margin-left: 6rem;
+}
+
+.loginFormContainer h5 {
+  margin-bottom: 1rem;
+}
+
+.forgetRem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.forgetRem p {
+  font-size: 14px;
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+}
+
+.forgetRem p:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.hidden-checkbox {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  line-height: 20px;
+  display: inline-block;
+  color: var(--light-text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Custom checkbox design */
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--light-text);
+  background-color: var(--primary-bg);
+  border-radius: 4px;
+}
+
+.checkbox-label::after {
+  content: "✓";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--white-text);
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.hidden-checkbox:checked + .checkbox-label::after {
+  opacity: 1;
+}
+
+/* --------------------------------------------Forgot Password Styles----------------------------------------- */
+
+.fgtPasLeft {
+  background-image: url("../../assets/forgotScreen.png");
+}
+
+.fgtPasRight h5 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.sendPassTxt {
+  font-weight: 600;
+  font-size: 13px;
+}
+.resetpastext {
+  font-size: 18px;
+  font-weight: 400;
+}
+.resendP2 {
+  font-weight: 400;
+  color: var(--light-red);
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.resendP {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--grey-bg);
+  cursor: pointer;
+  border-bottom: 1.3px solid var(--grey-bg);
+}
+
+.resendP a {
+  color: var(--light-red);
+}
+
+.resendP span {
+  color: var(--light-red);
+}
+
+.resendText {
+  color: var(--secondary-text);
+  margin-bottom: 1.5rem;
+}
+.resetRequesText {
+  padding-bottom: 10px;
+}
+.doneImgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.doneImgDiv img {
+  width: 100px;
+  animation: zoom-in 1s forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+    /* Start with normal scale */
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* Zoom in to 120% scale */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Zoom in to 120% scale */
+  }
+}
+
+.sentEmailText {
+  font-size: 17px !important;
+}
+
+/* -----------------------------------------Password Changed Succesfully Styles------------------------------------------- */
+
+.doneImgSuccess {
+  justify-content: flex-start;
+  margin-bottom: 2rem !important;
+}
+
+.changedSuccesTexts {
+  margin-bottom: 2rem !important;
+}
+
+/* -------------------------------------------Change Password---------------------------------------------------------------- */
+
+.passwordValidation {
+  font-size: 13px;
+}
+
+.InputDiv button {
+  border: none;
+  background-color: transparent;
+}
+
+.InputDiv button img {
+  width: 1.2rem;
+}
+
+.inputDiv1 button {
+  border: none;
+  background-color: transparent;
+}
+
+.inputDiv1 button img {
+  width: 1.2rem;
+}
+
+.InputDiv::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+}
+
+/* for input  */
+
+.input_field_custom {
+  font-size: 14px;
+  border: 1px solid var(--light-border);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding-left: 50px;
+  height: 60px;
+  background-color: var(--primary-bg);
+}
+
+.input_field_custom1 {
+  font-size: 14px;
+  border: 1px solid var(--light-text);
+  border-radius: 6px;
+  padding-left: 45px;
+  height: 40px;
+  background-color: var(--primary-bg);
+}
+
+.image_icon_position::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  z-index: 99999;
+  top: 17px;
+}
+
+.image_icon_position1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10px;
+  z-index: 99999;
+  top: 9px;
+}
+
+/* .image_icon_position2::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 24.5rem;
+  z-index: 99999;
+  top: 9px;
+} */
+
+.image_icon_position {
+  position: relative;
+}
+
+.image_icon_position1 {
+  position: relative;
+  z-index: 90;
+}
+
+.password_image .eye_icon {
+  position: absolute;
+  right: 10px;
+  top: 19px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.password_image .eye_icon1 {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.password_image .eye_open {
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+}
+
+.password_image .eye_close {
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+}
+
+.condition_error,
+.invalid_data,
+.errorMsg {
+  color: var(--error-text);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 99999;
+  position: absolute;
+  left: 5%;
+}
+
+.email_image::before {
+  background-image: url("../../assets/codicon_mail.png");
+}
+
+.password_image::before {
+  background-image: url("../../assets/bx_bxs-lock-alt.png");
+}
+
+.person_image::before {
+  background-image: url("../../assets/person.png");
+}
+
+.person__email_image::before {
+  background-image: url("../../assets/mail.png");
+}
+
+.person__blood_image::before {
+  background-image: url("../../assets/blood.png");
+}
+
+.person__phone_image::before {
+  background-image: url("../../assets/call.png");
+}
+
+.person__phone_image::before {
+  background-image: url("../../assets/call.png");
+}
+
+.person__facebook_image::before {
+  background-image: url("../../assets/facebook.png");
+}
+
+.person__instagram_image::before {
+  background-image: url("../../assets/instagram.png");
+}
+
+.person__linkedin_image::before {
+  background-image: url("../../assets/linkedin.png");
+}
+.person__twitter_image::before {
+  background-image: url("../../assets/twitter.svg");
+}
+.person__snapchat_image::before {
+  background-image: url("../../assets/snapchat.svg");
+}
+.person__business_center_image::before {
+  background-image: url("../../assets/business_center.png");
+}
+
+.person__calenderFrame_image::before {
+  background-image: url("../../assets/calenderFrame.png");
+  cursor: pointer !important;
+}
+
+.resturant_icon::before {
+  background-image: url("../../assets/Reservationicoon.svg");
+}
+
+.tagline_icon::before {
+  background-image: url("../../assets/tag_line.svg");
+}
+
+.Reservationicoon::before {
+  background-image: url("../../assets/Reservationicoon.svg");
+}
+
+.googleicon::before {
+  background-image: url("../../assets/googleicon.svg");
+}
+
+.wowpng::before {
+  background-image: url("../../assets/wowpng.png");
+}
+
+.take-away::before {
+  background-image: url("../../assets/take-away.svg");
+}
+
+.delivery-scooter::before {
+  background-image: url("../../assets/delivery-scooter.svg");
+}
+
+.IconContact::before {
+  background-image: url("../../assets/contact_page.svg");
+}
+
+.BeforeTime::before {
+  background-image: url("../../assets/device_reset.svg");
+}
+
+.person__gender_image::before {
+  color: #323232;
+  opacity: 0.5;
+  background-image: url("../../assets/gender.png");
+}
+
+.eye_open {
+  background-image: url("../../assets/hidePass.png");
+}
+
+.eye_close {
+  background-image: url("../../assets/viewPass.png");
+}
+
+.calendar_month_icon::before {
+  background-image: url("../../assets/calendar_month.png");
+}
+
+.userId::before {
+  content: "UserID:" !important;
+  font-size: 9px;
+  padding-top: 0.3rem;
+  color: var(--light-text);
+}
+
+.userId input {
+  width: 100%;
+}
+
+.pointerEvents {
+  pointer-events: none;
+}
+
+/* for input  */
+.crsICN img {
+  width: 12px;
+}
+
+.crsBTN {
+  position: absolute;
+  right: 6px;
+  top: 11px;
+  font-size: x-small;
+  /* left: -8px; */
+  bottom: 11px;
+  border: none;
+  background-color: #f6f5f5;
+}
+
+/* .rememberMe .rmmbeME .hidden-checkbox {
+  position: relative !important;
+} */

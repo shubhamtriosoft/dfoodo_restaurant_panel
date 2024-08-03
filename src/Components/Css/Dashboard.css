@@ -1,0 +1,209 @@
+.page_content {
+  display: flex;
+}
+.modalzindex {
+  z-index: 666;
+}
+.modal-backdrop {
+  z-index: 666 !important;
+}
+.showOpenBtn {
+  display: flex !important;
+}
+
+.hideOpneBtn {
+  display: none !important;
+}
+
+/* .pageCntn_head {
+  padding: 0.8rem 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageCntn_head_left {
+  display: flex;
+  align-items: center;
+} */
+
+/* .pageNameDiv {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.pageNameDiv p {
+  margin: 0;
+  color: var(--secondary-text);
+  font-weight: 500;
+}
+
+.pageNameDiv img {
+  width: 0.6rem;
+} */
+
+.page_body {
+  padding: 0.5rem;
+}
+
+.page_content_container {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.pageCntn_head,
+.page_body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .pageCntn_head,
+  .page_body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pageCntn_head,
+  .page_body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.dashboard {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.addtional_notes_css {
+  background-color: var(--notes-back);
+  box-shadow: none;
+}
+
+.pageCntn_head {
+  position: sticky;
+  top: 72px;
+  background-color: var(--primary-bg);
+  z-index: 91;
+  padding-bottom: 0.5rem !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+ */
+
+@media screen and (max-width: 1100px) {
+  .resrvDashList .timeResrvs {
+    font-size: 11px !important;
+    width: 30px;
+  }
+
+  .rsrvDashStat h6 {
+    font-size: 14px !important;
+  }
+
+  .rsrvDashStatTag p {
+    font-size: 9px !important;
+    padding: 1px 0.3rem !important;
+  }
+
+  .rsrvDashActionsBottom .p-dropdown {
+    font-size: 11px !important;
+    width: 80px !important;
+  }
+
+  .rsrvDashActionsBottom .p-dropdown .p-dropdown-trigger svg {
+    width: 10px !important;
+  }
+
+  .rsrvDashStat {
+    gap: 0.3rem !important;
+  }
+
+  .resrvListContainer ul li {
+    padding: 0.8rem 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .tableStatusColor {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .tableStatusDiv p {
+    font-size: 12px !important;
+  }
+
+  .tableStatusColor {
+    margin-top: 3px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tableStatusColor {
+    width: 9px !important;
+    height: 9px !important;
+  }
+  .tableStatusDiv p {
+    font-size: 11px !important;
+  }
+
+  .dateChangeFilter {
+    gap: 0.5rem !important;
+  }
+
+  .gotodayContainer {
+    gap: 0.5rem !important;
+  }
+
+  .dateChangeFilterContaiern img {
+    width: 1rem !important;
+  }
+
+  .dateChangeFilterContaiern .react-datepicker__input-container input {
+    font-size: 14px !important;
+    max-width: 130px !important;
+  }
+
+  .gotodayContainer button img {
+    max-width: 1.2rem !important;
+  }
+
+  .gotoday button img {
+    max-width: 1.3rem !important;
+  }
+
+  .resrvDashList .timeResrvs {
+    font-size: 10px !important;
+    width: 26px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .tableStatusDiv {
+    gap: 0.3rem !important;
+  }
+}
+
+.long-name,
+.short-name {
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .short-name {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .long-name {
+    display: none;
+  }
+}

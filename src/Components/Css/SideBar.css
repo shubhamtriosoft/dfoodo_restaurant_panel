@@ -1,0 +1,116 @@
+.sidebar {
+  background-color: var(--secondary-bg);
+  margin-left: -260px;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+.dsplynoe {
+  display: none;
+}
+
+.sidebar_container {
+  width: 260px;
+}
+
+.OpneSidebar {
+  margin-left: 0px;
+}
+
+.menuOpenClose {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  padding-right: 0 !important;
+}
+
+.menuOpenClose img {
+  width: 1.3rem;
+  transform: rotate(180deg);
+}
+
+.menuOpenClose p {
+  margin: 0;
+  color: var(--light-black);
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.sidebar_list ul {
+  list-style: none;
+  padding: 0;
+  padding: 0 1rem;
+}
+
+.sidebar_list ul .sidebar_list_item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+.sidebar_list ul .sidebar_list_item img {
+  width: 1.5rem;
+}
+
+.sidebar_list ul .sidebar_list_item p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.activeSideItem {
+  color: var(--primary-color) !important;
+  border-radius: 10px;
+}
+
+.activeSideItem p {
+  color: var(--primary-color) !important;
+}
+
+.sideHeadLogo {
+  height: 76.8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarDropdown {
+  cursor: pointer;
+}
+
+.droparrow {
+  position: relative;
+}
+.droparrow img {
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  background-color: #f6f5f5;
+  height: 12px;
+  width: 10px;
+}
+
+.sidebarDropdown .dropdown-menu {
+  position: static !important;
+  transform: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin-left: 1rem !important;
+  transition: all 0.3s ease-in-out !important;
+  margin-bottom: 1rem !important;
+  inset: 0px !important;
+}
+
+.sidebarDropdown .dropdown-item.active,
+.dropdown-item:active {
+  color: var(--primary-color);
+  text-decoration: none;
+  background-color: transparent !important;
+}

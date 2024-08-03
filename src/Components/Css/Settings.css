@@ -1,0 +1,500 @@
+.unclickable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.settingsTabs_container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.settingsTabs {
+  width: 100%;
+}
+
+.settingsTabs_container ul li {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid var(--light-bg);
+}
+
+.settingsTabs_container ul li div {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.settingsTabs_container ul li div p {
+  font-size: 14px;
+  margin: 0;
+  color: var(--light-black);
+  font-weight: 500;
+}
+
+.settingsTabs_container ul li.currentTab {
+  border-color: var(--primary-color) !important;
+}
+
+/* -------------------------------------General Settings page Styles-------------------------------------------  */
+
+.themeChangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themeChangeInputs div {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.themeChangeInputs div label {
+  color: var(--light-black);
+  font-weight: 600;
+}
+
+.themeChange {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.themeChange p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-black);
+}
+
+.checkmarkcontainer {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--light-black);
+}
+
+.checkmarkcontainer input[type="radio"] {
+  display: none;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--light-bg);
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--light-bg);
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 1px;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.checkmarkcontainer input[type="radio"]:checked + .checkmark::after {
+  display: block;
+}
+
+.checkbox-labelMeal::before {
+  content: "";
+  position: absolute;
+  top: -6px !important;
+  height: 18px;
+  width: 18px;
+  right: 0px !important;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-bg);
+  border-radius: 0px;
+}
+
+.checkbox-labelMeal::after {
+  content: "✓";
+  position: absolute;
+  right: 0px !important;
+  top: -4px !important;
+  width: 17px;
+  height: 17px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealTimeBox {
+  display: flex;
+}
+
+.mealsTimingCard_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mealsTimingCard_head h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.mealsTimingCard {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13.399999618530273px 0px #0000000d;
+  margin-bottom: 1rem;
+}
+
+.mealsTimingCard_body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.mealsTimingCard_body .openCloseInp {
+  position: relative;
+  width: 100%;
+  width: 110.6px;
+  height: 35px;
+  border: 1px solid var(--light-text);
+  border-radius: 6px;
+  /* padding: 0.4rem 0.2rem 0.3rem 0.2rem; */
+}
+
+.openCloseInp p {
+  font-size: 11.32px;
+  font-weight: 500;
+  background-color: var(--secondary-bg);
+  margin: 0;
+  color: var(--light-text);
+  font-size: 11.32px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: -11px;
+  left: 10px;
+}
+
+.openCloseInp select {
+  outline: none;
+  border: none;
+  width: 100%;
+  color: var(--light-text);
+  background-color: transparent;
+}
+
+.openCloseInp .input_field_custom1 {
+  padding-left: 1rem;
+}
+
+.addMeatRow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.addMeatRowHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.addMeatRow button {
+  border: none;
+  background-color: transparent;
+}
+
+.addMeatRow button img {
+  width: 2rem;
+}
+
+.uplaodfilesDiv p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.uplaodfilesDiv {
+  height: 100%;
+}
+
+.menuDropZOne {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  height: 100%;
+  align-items: center;
+  height: 23rem;
+}
+
+.menuDropZOne_container label {
+  background-color: var(--light-black);
+  color: var(--white-text);
+  font-size: 14px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropFilesHere {
+  text-align: center;
+}
+
+.dropFilesHere img {
+  width: 30%;
+}
+
+.dropFilesHere p {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.menuDropZOne_container {
+  text-align: center;
+}
+.b {
+  margin-top: 3rem;
+}
+
+.btnSave {
+  width: 248px;
+  height: 40px;
+  background-color: var(--primary-color) !important;
+}
+
+.btnCancel {
+  width: 248px;
+  height: 40px;
+  border: 1px solid var(--primary-text);
+}
+
+/* ----------------------------------------------Reservation Settings Pages Styles----------------------------------------- */
+
+.InputDiv5 {
+  height: 35px;
+  border: 1px solid var(--light-text);
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6px;
+}
+
+.resrvInputDiv label {
+  margin-bottom: 0.5rem;
+}
+
+.InputDiv5 input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.InputDiv5 img {
+  width: 1.5rem;
+}
+
+.timeSlotsTab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.manageByslotContainer {
+  margin: 3rem 0;
+  width: 202px;
+  height: 44px;
+}
+
+.manageByslotContainer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.97px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.timeSlotsTab .timeSlots {
+  font-size: 14.97px;
+  font-weight: 500;
+  color: var(--blue-grey);
+  border-bottom: 1px solid var(--blue-grey);
+  cursor: pointer;
+}
+
+.timeSlotsTab .timeSlots.activeSlotsTime {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.resrvtionSettingsContainer {
+  margin: 3rem 0;
+}
+
+/* -----------------------------------------------Integration Settings Page Styles----------------------------------------- */
+
+.intergerInputDiv {
+  margin-bottom: 1rem;
+}
+
+.intergerInputDiv label {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.intergerInputDiv .InputDiv6 {
+  height: 40px;
+  border: 1px solid var(--light-text);
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6px;
+}
+
+.intergerInputDiv .InputDiv6 input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.intergerInputDiv .InputDiv6 img {
+  width: 1.7rem;
+}
+
+/* -------------------------------------------------Settings Operational Hours Pages Stylings----------------------------------- */
+
+.timingsRowHead2 {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-color: var(--primary-bg);
+  position: sticky;
+  top: 164px;
+  z-index: 20;
+}
+
+.hourSettingsTabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.opHours {
+  background-color: var(--light-bg);
+  color: var(--light-black);
+  padding: 0.2rem 0.5rem;
+  font-size: 14px !important;
+  width: 150px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spHours {
+  background-color: var(--primary-color) !important;
+  color: var(--white-text) !important;
+}
+
+.HiddenDiv {
+  display: none;
+}
+
+.specialModalFooter2 {
+  display: flex;
+  justify-content: flex-end !important;
+  gap: 1rem !important;
+}
+
+.weekdayHead {
+  color: var(--light-black);
+  padding-left: 2.5rem;
+}
+
+.weekdayHead {
+  margin-bottom: 0 !important;
+}
+
+.weekdayOpenCLose {
+  display: flex;
+  align-items: center;
+}
+
+.mealTimeBox .hidden-checkbox {
+  position: relative !important;
+}
+
+.weekdayOpenCLose p {
+  margin: 0;
+}
+
+.settingsLael {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.settingsLael span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .settingsLael {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .settingsLael span {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .settingsLael {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .settingsLael span {
+    font-size: 12px !important;
+  }
+}
+
+.settingsLael span {
+  font-size: 14px;
+}
+
+.settingsLael button {
+  border: none;
+  background-color: transparent;
+}
+
+.settingsLael button img {
+  width: 1.1rem;
+  padding-right: 0.3rem;
+}

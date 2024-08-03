@@ -1,0 +1,24 @@
+left_po,
+        top_po,
+        50,
+        60,
+        0,
+        number_table,
+        number_table_with_t,
+        scaleX_position,
+        scaley_position,
+        angle_position,
+        blocked_status,
+        available_online,
+        min_person,
+        preferred_person,
+        max_person,
+        priority_level,
+        "square_table",
+        false,
+        0,
+        type_name,
+        selected_canvas
+
+
+        

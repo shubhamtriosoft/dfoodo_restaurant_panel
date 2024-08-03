@@ -1,0 +1,116 @@
+.no_prsnl_id span {
+  color: var(--red-text);
+}
+.subrightsBoxes ul {
+  padding-left: 4rem;
+  margin-bottom: 0;
+}
+.createRightBtnDiv button {
+  border: none;
+  width: 120px;
+  padding: 0.7rem;
+}
+
+.createRightBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin: 1.5rem 0;
+}
+
+.editRightBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.editRightBtn img {
+  width: 1.5rem;
+}
+
+.rightsActionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* ---------------------------------------------- Add Designation Page Styles--------------------------------------------------- */
+
+.addDesigRightsContainer h6 {
+  padding-left: 1.5rem;
+}
+
+.addDesigRightsContainer {
+  margin: 2rem 0;
+}
+
+.selectRightsBoxList {
+  background-color: var(--primary-bg);
+  border-radius: 10px;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+}
+
+.selectRightsBoxList ul {
+  list-style: none;
+}
+
+.inside_PageBoxes ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.selectRightsBoxListHead {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.selectRightsBoxListHead label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.selectRightsBox_container input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--grey-bg);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Style the checked state */
+.selectRightsBox_container input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white-text);
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: none;
+  font-size: 14px;
+  color: var(--white-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+input[type="checkbox"]:checked::before {
+  display: block !important;
+}
+
+.checkboxFlex {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}

@@ -1,0 +1,263 @@
+/* Loading spinner */
+.loading_website {
+  width: 160px;
+  height: 160px;
+  padding: 7px;
+  background-color: var(--primary-bg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .loading_website .loading_website-inner {
+  width: 100%;
+  height: 100%;
+  animation: restaurant-loader-spin 0.5s linear infinite;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  border: 3px solid transparent;
+  border-right-color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  border-radius: 50%;
+  content: "";
+}
+
+.loading_website:before,
+.loading_website:after {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.loading_website:before {
+  background-image: url("../../assets/new_loading_upper.png");
+  height: 35%;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: restaurant-loader-pot;
+}
+
+.loading_website:after {
+  background-image: url("../../assets/new_loading.png");
+  height: 65%;
+} */
+
+/* Transparent Overlay */
+.loading_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(20, 20, 20, 0.4), rgba(0, 0, 0, 0.4));
+  background: -webkit-radial-gradient(
+    rgba(20, 20, 20, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  z-index: 998;
+  /* Ensures the overlay is behind the loading spinner */
+}
+
+/* @keyframes restaurant-loader-pot {
+  from,
+  45%,
+  55%,
+  65%,
+  75%,
+  80%,
+  85%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: rotate(0);
+  }
+
+  45% {
+    transform: translate3d(-4%, -13%, 0) rotate(-13deg);
+  }
+
+  55% {
+    transform: translate3d(1%, -2%, 0) rotate(6deg);
+  }
+
+  65% {
+    transform: translate3d(-2%, -4%, 0) rotate(-3deg);
+  }
+
+  75% {
+    transform: translate3d(2%, 3%, 0) rotate(3deg);
+  }
+
+  80% {
+    transform: translate3d(-2%, 1%, 0) rotate(-2deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes restaurant-loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+} */
+
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue), 90%, 90%);
+  --fg: hsl(var(--hue), 90%, 10%);
+  --trans-dur: 0.3s;
+}
+
+.smiley {
+  width: 100%;
+  height: 100%;
+}
+.smiley__eye1,
+.smiley__eye2,
+.smiley__mouth1,
+.smiley__mouth2 {
+  animation: eye1 3s ease-in-out infinite;
+}
+.smiley__eye1,
+.smiley__eye2 {
+  transform-origin: 64px 64px;
+}
+.smiley__eye2 {
+  animation-name: eye2;
+}
+.smiley__mouth1 {
+  animation-name: mouth1;
+}
+.smiley__mouth2 {
+  animation-name: mouth2;
+  visibility: hidden;
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 90%, 10%);
+    --fg: hsl(var(--hue), 90%, 90%);
+  }
+}
+/* Animations */
+@keyframes eye1 {
+  from {
+    transform: rotate(-260deg) translate(0, -56px);
+  }
+  50%,
+  60% {
+    animation-timing-function: cubic-bezier(0.17, 0, 0.58, 1);
+    transform: rotate(-40deg) translate(0, -56px) scale(1);
+  }
+  to {
+    transform: rotate(225deg) translate(0, -56px) scale(0.35);
+  }
+}
+@keyframes eye2 {
+  from {
+    transform: rotate(-260deg) translate(0, -56px);
+  }
+  50% {
+    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1);
+  }
+  52.5% {
+    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1, 0);
+  }
+  55%,
+  70% {
+    animation-timing-function: cubic-bezier(0, 0, 0.28, 1);
+    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1);
+  }
+  to {
+    transform: rotate(150deg) translate(0, -56px) scale(0.4);
+  }
+}
+@keyframes eyeBlink {
+  from,
+  25%,
+  75%,
+  to {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+}
+@keyframes mouth1 {
+  from {
+    animation-timing-function: ease-in;
+    stroke-dasharray: 0 351.86;
+    stroke-dashoffset: 0;
+  }
+  25% {
+    animation-timing-function: ease-out;
+    stroke-dasharray: 175.93 351.86;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    animation-timing-function: steps(1, start);
+    stroke-dasharray: 175.93 351.86;
+    stroke-dashoffset: -175.93;
+    visibility: visible;
+  }
+  75%,
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes mouth2 {
+  from {
+    animation-timing-function: steps(1, end);
+    visibility: hidden;
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    visibility: visible;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -351.86;
+  }
+}
+.restaurant-loader-inner img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.restaurant-loader-inner {
+  z-index: 10;
+  width: fit-content;
+  position: absolute;
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(77, 55, 55, 0.1);
+  position: relative;
+}

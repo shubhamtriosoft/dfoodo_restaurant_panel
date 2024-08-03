@@ -1,0 +1,788 @@
+.walkInHead {
+  background-color: var(--grey-bg);
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.walkInHead h5 {
+  margin: 0;
+  color: var(--white-text);
+}
+
+.createReservForm_right h6,
+.createReservForm_left h6 {
+  border-bottom: 1px solid var(--light-black);
+  color: var(--light-black);
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.resrvDate {
+  margin-bottom: 1rem;
+}
+
+.childANdPetsCOunt {
+  margin-bottom: 1rem;
+}
+
+.resrvDateSelect ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.resrvDateSelect,
+.resrvDateSelect ul li {
+  width: 100%;
+}
+
+.resrvDateSelect ul li p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dateBox {
+  border: 0.85px solid #bebebe;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dateBox p {
+  font-size: 14px !important;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.resrvDate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.resrvDate img {
+  width: 18px;
+}
+
+.childANdPetsCOunt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.petRsrvImg {
+  width: 65px;
+  text-align: center;
+}
+
+.mealReserv {
+  width: 100%;
+  border: 0.85px solid #bebebe;
+  background-color: var(--secondary-bg);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mealReserv p {
+  font-size: 14px !important;
+  font-weight: 500;
+  color: var(--light-text);
+  padding: 0.8rem 1rem;
+}
+
+.resrvSlots {
+  border: 0.85px solid #bebebe;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.resrvSltTIme {
+  border-bottom: 1px solid #bebebe;
+  padding: 0.2rem 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.resrvSltTIme p {
+  font-size: 14px !important;
+}
+
+.resrvSltSeats p {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1250px) {
+  .resrvSltTIme p {
+    font-size: 13px !important;
+  }
+
+  .dateBox p {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .resrvSltTIme p {
+    font-size: 11px !important;
+  }
+
+  .dateBox p {
+    font-size: 11px !important;
+  }
+
+  .resrvSltSeats p {
+    font-size: 10px !important;
+    font-weight: 500;
+  }
+}
+
+.resrvSltSeats {
+  background-color: var(--below-book);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.guestDetails {
+  background-color: var(--secondary-bg);
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.guestDetails input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid var(--grey-bg);
+  background-color: transparent;
+  padding-left: 0.5rem;
+  outline: none;
+  border-radius: 0 !important;
+}
+
+.show_1px_red {
+  border: 1px solid var(--red-bg);
+}
+
+.react-international-phone-input-container
+  .react-international-phone-input:focus,
+.react-international-phone-country-selector-button:focus,
+.guestDetails input:focus {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--primary-color) !important;
+}
+
+.interPhoneInput {
+  margin-bottom: 1rem;
+}
+
+.createReservForm_Container {
+  margin: 1.5rem 0;
+}
+
+.react-international-phone-input-container .react-international-phone-input,
+.react-international-phone-country-selector-button {
+  border: none !important;
+  border-bottom: 1px solid var(--grey-bg) !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+
+.selectedFormItems {
+  background-color: var(--primary-color) !important;
+  color: var(--white-text) !important;
+}
+
+.selectedFormItems p {
+  color: var(--white-text) !important;
+}
+
+.selectedFormTimeItems {
+  background-color: var(--below-book) !important;
+}
+
+.selectedFormTimeItems p {
+  color: var(--lightBlack-bg) !important;
+}
+
+.guestDetails2 {
+  background-color: transparent;
+  padding: 0;
+}
+
+.guestDetails2 input {
+  margin-bottom: 2rem;
+}
+
+.resrvDateSelect {
+  position: relative;
+}
+
+.addInputBtn {
+  position: absolute;
+  right: -11px;
+  top: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.addInputBtn img {
+  width: 100%;
+}
+
+.customRsrvInput input {
+  border: 1px solid var(--primary-color);
+  outline: none;
+  height: 48px;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 12px;
+  width: 90px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hideInput {
+  display: none;
+}
+
+.timeSlotScrollBAr {
+  overflow: hidden;
+}
+
+.timeSlotScrollBAr ul {
+  min-width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 0.3rem;
+}
+
+.releaseModalHeader {
+  border: none;
+}
+
+.releaseModalHeadLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.releaseModalHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.releaseModalHeadLeft h5 {
+  margin: 0;
+}
+
+.releaseModalHeadLeft h5 span {
+  color: var(--primary-color);
+}
+
+.releaseModalDetails p {
+  color: var(--light-black);
+  font-weight: 500;
+  margin: 0;
+}
+
+.releaseModalHeadRight img {
+  width: 1.5rem;
+}
+
+.releaseModalDetails h5 {
+  margin-bottom: 0.5rem;
+}
+
+.releaseModalDetails p {
+  font-size: 15px;
+}
+
+.countOfGuests {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.update_realse_dataContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.releaseModalFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+
+.releaseModalFooter button {
+  width: 100%;
+}
+
+.releaseModalBtn {
+  background-color: var(--red-text);
+  border-color: var(--red-text);
+}
+
+.releaseModalBtn:hover {
+  background-color: var(--red-bg);
+  border-color: var(--red-text);
+}
+
+.editNowBtn {
+  background-color: var(--light-bg);
+  border-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.editNowBtn:hover {
+  background-color: var(--fade-text);
+  border-color: var(--fade-text);
+}
+
+.releaseModalFooter,
+.releaseModalBody {
+  padding: 1rem 1.5rem;
+  padding-top: 0 !important;
+}
+
+.assignModalBtn {
+  background-color: var(--green-bg);
+  border-color: var(--green-bg);
+}
+
+.assignModalBtn:hover {
+  background-color: var(--darkGreen-bg) !important;
+  border-color: var(--green-bg) !important;
+}
+
+.tableStatusContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  /* margin-top: 2rem; */
+}
+
+.tableStatusContainer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.magnifireDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.magnifireDiv p {
+  font-size: 18px !important;
+}
+
+.plusMinusDiv p {
+  margin: 0;
+}
+
+.plusMinusDiv {
+  background-color: var(--secondary-bg);
+  width: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plusMinusDivAdd {
+  border: 1px solid var(--light-bg);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.plusMinusDivCenter {
+  border: 1px solid var(--light-bg);
+}
+
+.plusMinusDivCenter img {
+  width: 1.1rem;
+  padding-bottom: 1px;
+}
+
+.plusMinusDivRem {
+  border: 1px solid var(--light-bg);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .tableStatusContainer {
+    gap: 1rem;
+  }
+
+  .filkterActions {
+    justify-content: flex-end;
+  }
+}
+
+.tableStatusDiv {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.5rem;
+}
+
+.tableStatusDiv p {
+  color: var(--light-text);
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.tableStatusColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.blankTable {
+  background-color: var(--blue-grey);
+}
+
+.blockTable {
+  background-color: var(--light-black);
+}
+
+.runningTable {
+  background-color: var(--error-text);
+}
+
+.offlineTable {
+  background-color: var(--offline-table);
+}
+
+.ReservedTable {
+  background-color: var(--reserved-table);
+}
+
+.RunningTable {
+  background-color: var(--green-bg);
+}
+
+.walkinTable {
+  background-color: var(--waling-table);
+}
+
+.overlayNew {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 640;
+}
+
+.displayBlock {
+  display: block !important;
+}
+
+/* Styles for the selected div */
+.selectedOverlay {
+  position: relative;
+  z-index: 999999999999;
+  /* Ensure the selected div appears on top of the overlay */
+  background-color: var(--secondary-bg);
+}
+
+.selectedOverlay {
+  position: relative;
+  z-index: 650;
+  /* Ensure the selected div appears on top of the overlay */
+  background-color: var(--secondary-bg);
+}
+
+.resrvListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.pointerNone {
+  pointer-events: none;
+  cursor: default !important;
+}
+
+/* ----------------------------------- Reservations History Page Styles------------------------------------------ */
+
+.historyTableContainer .table {
+  margin: 1.5rem 0;
+}
+
+.historyTableContainer .table thead tr {
+  border-color: transparent;
+  height: 50px;
+}
+
+.historyTableContainer .table thead tr th {
+  color: var(--light-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.historyActions button {
+  font-size: 13px;
+  width: 110px;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.instructions {
+  color: var(--light-black);
+  border: 1px solid var(--grey-bg) !important;
+  background-color: transparent;
+}
+
+.declineResrv {
+  color: var(--red-text);
+  background-color: transparent;
+  border: 1px solid var(--light-black) !important;
+}
+
+.acceptResrv {
+  color: var(--white-text);
+  background-color: var(--primary-color);
+}
+
+.arrivedResrv {
+  color: var(--white-text);
+  background-color: var(--green-bg);
+}
+
+.cancelRsrv {
+  color: var(--white-text);
+  background-color: var(--red-bg);
+  border: 1px solid var(--red-bg);
+}
+
+.billResrv {
+  color: var(--red-text);
+  font-size: 11px !important;
+  text-align: left;
+}
+
+.noShowActiveResrv {
+  color: var(--light-text);
+  border: 1px solid var(--light-bg) !important;
+  background-color: transparent;
+}
+
+.tableNo {
+  color: var(--fade-text);
+  background-color: transparent;
+  font-size: 16px !important;
+  pointer-events: none;
+}
+
+.historyActionsBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.historyTableContainer .table thead tr th img {
+  width: 1.7rem;
+}
+
+.historyTableContainer .table tbody .historyTableRow td {
+  background-color: var(--secondary-color);
+}
+
+.historyTableContainer .table tbody .historyTableRow {
+  border-color: transparent;
+  border: 0.5px solid #7a7a7a40;
+  height: 100px;
+}
+
+.historyPerson div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.historyPerson img {
+  width: 1.3rem;
+}
+
+.historyPerson p {
+  color: var(--fade-text);
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.historyStatus p {
+  color: var(--fade-text);
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.toConfirm {
+  color: var(--white-text) !important;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  margin-bottom: 0.3rem;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 0.4rem !important;
+}
+
+.toArrive {
+  color: var(--light-black) !important;
+  background-color: var(--pending-bg);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  margin-bottom: 0.3rem;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 0.4rem !important;
+}
+
+.toreserved {
+  color: var(--white-text) !important;
+  background-color: var(--red-bg);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  margin-bottom: 0.3rem;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 0.4rem !important;
+}
+
+.toCompleted {
+  color: var(--green-bg) !important;
+  border: 1px solid var(--green-bg);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  margin-bottom: 0.3rem;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 0.4rem !important;
+}
+
+.tonoshow {
+  color: var(--white-text) !important;
+  background-color: var(--grey-bg);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  margin-bottom: 0.3rem;
+  width: 110px;
+  text-align: center;
+  margin-bottom: 0.4rem !important;
+}
+
+.historyName p {
+  color: var(--light-black);
+  margin: 0;
+  font-size: 14px;
+}
+
+.historyTime p {
+  color: var(--fade-text);
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.historyTimeImgText {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.historyTimeImgText img {
+  width: 18px;
+}
+
+.historyTimeImgText p {
+  color: var(--light-black) !important;
+  margin: 0;
+  font-size: 15px;
+}
+
+.historyTableContainer .table tbody .historyTableRow td .historyTableRowText {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topMargin {
+  margin-top: 0.9rem;
+}
+
+.justify_right {
+  justify-content: right;
+}
+
+.justify_left {
+  justify-content: left;
+}
+
+.datenotfoundshow h5 {
+  text-align: center !important;
+  margin-top: 4rem;
+  font-weight: 400;
+}
+
+.datenotfoundshow h5 span {
+  color: var(--primary-color);
+}
+
+.releaseModalHeadLeft h6 span {
+  color: var(--red-bg);
+}
+
+/*------table ---*/
+.table td {
+  margin-bottom: 2rem;
+}
+
+.gotodayContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gotodayContainer button img {
+  width: 1.5rem !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+

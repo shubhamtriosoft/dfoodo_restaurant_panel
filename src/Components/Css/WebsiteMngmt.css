@@ -1,0 +1,365 @@
+.justifyStart {
+  padding-top: 1.5rem;
+  justify-content: flex-start !important;
+}
+
+.addImgform_Container {
+  background-color: var(--primary-bg);
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.addImgform_Container img {
+  width: 7rem;
+  margin: 1rem auto;
+}
+
+.addImgform_Container p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.addImgform_Container h6 {
+  color: var(--white-text);
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.imgInputCotnainer label {
+  border: 1px solid var(--primary-text);
+  border-radius: 6px;
+  color: var(--light-black);
+  padding: 0.2rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.addImgform_Container textarea {
+  border: 1px solid var(--grey-bg);
+  border-radius: 6px;
+  height: 60px !important;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.webMngSave {
+  background-color: var(--light-black);
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  color: var(--white-text);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+}
+
+.addImgform_Container {
+  text-align: center;
+}
+
+.uploadedImg_container {
+  background-color: var(--primary-bg);
+  box-shadow: 0px 1.9617834091186523px 3.9235668182373047px 0px #00000040;
+  border-radius: 6px;
+}
+
+.uploadedImg_container .uploadedImgLink {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.uploadedImg_footer {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uploadedImg_footer button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.uploadedImg_footer button p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.img_name {
+  font-size: 14px;
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0.7rem;
+}
+
+.teamIng_Contianer {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+.teamIng_Contianer img {
+  border-radius: 50% !important;
+  /* width: 110px !important;
+  height: 110px; */
+}
+
+.uploadedTeam {
+  margin: 1.5rem 0 !important;
+}
+
+.uploadedTeam p {
+  margin-top: 1rem;
+}
+
+.deletImgIcon {
+  background-color: var(--primary-bg);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.deletImgIcon img {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.headSeo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seoTable_container .table tr {
+  border-color: transparent;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.seoTable_row {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.seoTable_row td div {
+  width: 100%;
+  height: 100%;
+  /* border-right: 1px solid var(--grey-bg); */
+}
+
+.indexNumber {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+.seoTable_row td img {
+  width: 50%;
+}
+
+tr.actionRow {
+  background-color: transparent !important;
+  margin-bottom: 1rem;
+}
+
+tr.actionRow td .img-icons {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  gap: 1rem;
+}
+
+tr.actionRow td .img-icons img {
+  width: 1rem;
+  height: 1rem;
+}
+
+tr.actionRow td,
+tr.actionRow td div {
+  background-color: transparent !important;
+}
+
+.seoTable_container {
+  margin: 1.5rem 0;
+}
+
+.addImgform_Container input {
+  width: 100%;
+  border: 1px solid var(--grey-bg);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.textareBlogs {
+  width: 100% !important;
+  border-radius: 6px;
+  border: 1px solid var(--light-bg);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.addBlogBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.addBlogBtnDiv button {
+  width: 100px;
+  font-size: 14px;
+}
+
+.seoAddForm label {
+  color: var(--light-black) !important;
+  font-weight: 500;
+  padding-left: 0.8rem !important;
+}
+
+.inpContainerSeo {
+  margin-bottom: 0.5rem !important;
+}
+
+.save-cap-btn {
+  background-color: var(--primary-color) !important;
+  border: none;
+}
+
+.subsTable_container h6 {
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.switchSmall {
+  display: inline-block;
+}
+.switchSmall input {
+  display: none;
+}
+.switchSmall small {
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  background: var(--light-bg);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.switchSmall small:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.1);
+}
+.switchSmall input:checked ~ small {
+  background: var(--primary-color);
+  transition: 0.3s;
+}
+.switchSmall input:checked ~ small:before {
+  transform: translate(13px, 0px);
+  transition: 0.3s;
+}
+
+.dltVacancy {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.vacancyTitle {
+  border-left: 1px solid var(--primary-color);
+  padding: 0.5rem;
+}
+
+.vacancyTitle p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light-black);
+  margin: 0;
+}
+
+.dltVacancyIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.dltVacancyIcon img {
+  width: 0.9rem !important;
+}
+
+.vacancyHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.vacancyOnOffItem {
+  background-color: var(--primary-bg);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.vacancyBody p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.vacancyBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vacancyBody img {
+  width: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .setTab1 {
+    padding: 1rem 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .setTab1 p {
+    font-size: 12px !important;
+  }
+}
+
+.seoTable_container .table > :not(caption) > * > * {
+  background-color: transparent !important;
+  padding: 1rem;
+}

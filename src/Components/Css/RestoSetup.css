@@ -1,0 +1,128 @@
+.no_restroImg img {
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+.no_restroImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no_restroImg .createRetroBtn {
+  background-color: var(--light-text);
+  color: var(--white-text);
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+}
+
+.height80 {
+  height: 80vh;
+}
+
+.createRestro {
+  height: 100%;
+}
+
+.no_restroContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.createRestaurant {
+  background-color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.restroView_table_Container .table {
+  margin: 1.5rem 0;
+}
+
+.restroView_table_Container .table thead tr {
+  border-color: transparent;
+}
+
+.restroView_table_Container .table thead tr th {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.rsvnDetailsImg {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvnDetailsImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.rsvnDetailsText h6 {
+  margin: 0;
+}
+
+.rsvnDetailsText p {
+  margin: 0;
+  color: var(--light-text);
+}
+
+.rsvnDetails {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  height: 62px;
+}
+
+.rsvnContactDetails p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--light-black);
+}
+
+.editRestroBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background-color: transparent;
+}
+
+.editRestroBtn p {
+  margin: 0;
+  color: var(--light-black);
+}
+
+.restroView_table_Container .table tbody tr.tableRow {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.th1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.th2 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.saparator1 {
+  border-right: 1px solid var(--light-text);
+}
+
+@media screen and (min-width: 1200px) {
+  .saparator1 {
+    width: 80%;
+  }
+}

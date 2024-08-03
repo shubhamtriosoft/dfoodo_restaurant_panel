@@ -1,0 +1,188 @@
+/* ------------------------------------FAQs Section Styling--------------------------------------- */
+/* section.faqs {
+  margin-top: 2rem;
+} */
+
+.faqs_container h3 {
+  text-align: center;
+}
+
+.faqs_container h3 {
+  margin-bottom: 1.5rem;
+}
+
+.faqs_container .faqs_div {
+  padding: 1rem;
+}
+
+.faqs_container .faqs_div .accordion-item {
+  margin: 1.5rem 0;
+  border: none;
+  background-color: var(--secondary-bg);
+  border-radius: 15px !important;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.accordion-header {
+  border-radius: 15px !important;
+}
+
+.show,
+.accordion-button {
+  border-radius: 15px !important;
+  /* font-size: 20px !important; */
+  font-weight: 600;
+  /*background-color: #fef2fe !important;*/
+}
+
+.accordion-item .accordion-button {
+  font-size: 15px !important;
+  padding: 0.8rem 1rem !important;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-body {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  font-weight: 500;
+  text-align: left !important;
+  font-size: 14px !important;
+  padding-top: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-bg) !important;
+  box-shadow: none;
+}
+
+.faqs_container .see_more_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.faqs_container .see_more_btn {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.faqs_container .see_more_btn:active,
+.faqs_container .see_more_btn:focus,
+.faqs_container .see_more_btn:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.faqsHeaDING {
+  text-align: left !important;
+  padding-left: 1rem;
+}
+
+/* -----------------------------------------User Manual Styles------------------------------------------- */
+
+.manualSubName {
+  font-weight: 600;
+  text-align: left !important;
+  padding-bottom: 0 !important;
+}
+
+.manualSubName p {
+  margin: 0;
+}
+
+.manualSubNameDetails,
+.manualSubName {
+  padding: 0.5rem;
+}
+
+.manualSubNameDetails {
+  text-align: left !important;
+}
+
+.borderLeft {
+  border-right: 1px solid var(--primary-color);
+}
+
+.manualSectionItems {
+  margin: 1rem 0;
+}
+
+.manualSection_container {
+  margin: 2rem 0;
+}
+
+.darkBg {
+  background-color: var(--lightBlack-bg);
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.faqDropdown {
+  width: 100%;
+}
+
+.faqDropdown .p-dropdown {
+  width: 100%;
+  background-color: var(--primary-bg) !important;
+  height: 37px;
+  border-radius: 6px;
+  border: 1px solid var(--light-bg);
+  padding: 0 1rem;
+}
+
+.indexIst ul li {
+  padding: 0;
+  list-style: none;
+}
+
+.indexIst ul {
+  padding-left: 0 !important;
+}
+
+.indexIst ul li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--light-bg);
+  padding-bottom: 0.5rem;
+  color: var(--light-black);
+  text-align: left;
+}
+
+.indexIst ul li.currentTopic {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.manualSectionItemsContaienr {
+  padding-left: 2rem;
+}
+
+.width150px {
+  width: 150px !important;
+}
+
+.btnSave {
+  padding-top: 0.5rem !important;
+}
+
+.btnSave p {
+  margin: 0;
+}
+
+.indexIst h5 {
+  text-align: left !important;
+  margin-bottom: 1.5rem;
+}
+
+.ck-editor__editable {
+  height: 250px;
+} 
