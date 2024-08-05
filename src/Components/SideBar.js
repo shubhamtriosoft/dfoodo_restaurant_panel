@@ -369,31 +369,6 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                 </div>
               </li>
             </Link>
-            <Link to="/Website_Management">
-              <li
-                className={`website_mngmt ${Triosidebarhideshow(
-                  "Website_Management"
-                )}`}
-              >
-                <div
-                  className={`sidebar_list_item ${
-                    location.pathname === "/Website_Management"
-                      ? "activeSideItem"
-                      : " "
-                  }`}
-                >
-                  <img
-                    src={
-                      location.pathname === "/Website_Management"
-                        ? WebsiteOrng
-                        : Website
-                    }
-                    alt="Barley's Dashboard"
-                  />
-                  <p>{sidebarpagetext.Website_Mngmt}</p>
-                </div>
-              </li>
-            </Link>
             <Link to="/View_Reports">
               <li
                 className={`reports sidebarDropdown ${Triosidebarhideshow(
@@ -530,44 +505,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
               </li>
             </Link>
 
-            {/* <li className="dropdown sidebarDropdown Help_And_Support">
-              <div
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                className={`sidebar_list_item ${
-                  location.pathname === "/Help_And_Support"
-                    ? "activeSideItem"
-                    : " "
-                }`}
-              >
-                <img
-                  src={
-                    location.pathname === "/Help_And_Support" ||
-                    location.pathname === "/FAQs" ||
-                    location.pathname === "/Manuals"
-                      ? HelpSupportOrng
-                      : HelpSupport
-                  }
-                  alt="Barley's Dashboard"
-                />
-                <p>{sidebarpagetext.Help_Support_text}</p>
-                <div className="droparrow">
-                  <img src={dropArroww} alt="img"></img>
-                </div>
-              </div>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/Manuals">
-                    Manuals
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Option 2
-                  </Link>
-                </li>
-              </ul>
-            </li> */}
+          
           </ul>
         </div>
       </div>
