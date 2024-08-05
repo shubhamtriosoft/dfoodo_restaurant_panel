@@ -36,7 +36,6 @@ import ViewFaq from "./Components/ViewFaq";
 import ViewKB from "./Components/ViewKB";
 import AddKB from "./Components/AddKB";
 import Report from "./Components/Reports";
-import WebsiteMngt from "./Components/WebsiteMngmt";
 
 function App() {
   useEffect(() => {
@@ -84,9 +83,6 @@ function App() {
 
           {/* System Settings Pages */}
           <Route path="/System_Settings" element={<SystemSettings />} />
-
-          {/* Website Settings Pages */}
-          <Route path="/Website_Management" element={<WebsiteMngt />} />
 
           {/* Create, Edit and View Righst Pages */}
           <Route path="/Create_Staff_Rights" element={<CreateStaffRights />} />
