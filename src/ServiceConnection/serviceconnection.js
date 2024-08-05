@@ -139,12 +139,18 @@ const get_all_WebsiteManagement =
 const save_update_WebsiteManagement =
   local_server_link_react + "save_update_WebsiteManagement";
 
+const get_all_tickets = local_server_link_react + "get_all_tickets";
+const get_save_update_tickets = local_server_link_react + "get_save_update_tickets";
+const resolve_ticket_by_user = local_server_link_react + "resolve_ticket_by_user";
+const get_save_update_tickets_details = local_server_link_react + "get_save_update_tickets_details";
+
 /**website links */
 // Retrieving data
 
 const retrievedAdminId = retrieveData("admin_id");
 const retrievedRestaurantId = retrieveData("default_restaurant_id");
 const retrievedWowreviewkey = retrieveData("wowreview_key");
+const restaurant_name = retrieveData("restaurant_name");
 
 const server_post_data = async (url_for, form_data) => {
   // const headers = {
@@ -158,6 +164,7 @@ const server_post_data = async (url_for, form_data) => {
   form_data.append("default_restaurant_id", retrievedRestaurantId);
   form_data.append("appauth_key", appauth_key);
   form_data.append("res_name", retrievedWowreviewkey);
+  form_data.append("restaurant_name", restaurant_name);
   if (form_data.get("data_call") !== null) {
     form_data.append("call_id", retrievedAdminId);
   }
@@ -252,5 +259,9 @@ export {
   get_all_WebsiteManagement,
   save_update_WebsiteManagement,
   get_all_subscribe,
+  get_all_tickets,
+  get_save_update_tickets,
+  resolve_ticket_by_user,
+  get_save_update_tickets_details,
   //website Links
 };

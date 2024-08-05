@@ -36,7 +36,8 @@ import ViewFaq from "./Components/ViewFaq";
 import ViewKB from "./Components/ViewKB";
 import AddKB from "./Components/AddKB";
 import Report from "./Components/Reports";
-
+import CreateNewTicket from "./Components/CreateTicket";
+import ReplyToTicket from "./Components/ReplyToTickect";
 function App() {
   useEffect(() => {
     console.log("Effect is running");
@@ -150,6 +151,8 @@ function App() {
           <Route path="/Feedback_Management" element={<FeedBackManagement />} />
 
           <Route path="/View_Reports" element={<Report />} />
+          <Route path="/Manuals/Create_Ticket" element={<CreateNewTicket />} />
+          <Route path="/Manuals/Reply_Ticket/:ticketId" element={<ReplyToTicket />} />
         </Routes>
       </BrowserRouter>
     </div>
