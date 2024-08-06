@@ -14,7 +14,7 @@ import Analytics from "../assets/download.svg";
 import Noti from "../assets/notiBlack.svg";
 import SearchIcon from "../assets/megnfineSearc.svg";
 import NotificationBar from "./NotificationBar.js";
-import DownArrow from "../assets/chevron-down-svgrepo-com.svg";
+import DownArrow from "../assets/dropArrowWHite.svg";
 import SearchImg from "../assets/searchBlackHead.svg";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -51,7 +51,6 @@ function Header() {
   const restaurant_name = retrieveData("restaurant_name");
   const restaurant_image = retrieveData("restaurant_image");
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
-
 
   useEffect(() => {
     const retrivemsg = retrieveData("session_msg");

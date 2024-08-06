@@ -11,17 +11,20 @@
 
 .navbar-brand {
   background-color: var(--secondary-bg);
-  height: 100%;
+
   margin-right: 0;
-  padding: 1.2rem 0 0.2rem 0;
 }
 
 .headerLogo_contaienr {
-  width: 210px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .headerLogo_contaienr img {
-  width: 100%;
+  height: 100%;
+  width: 50%;
 }
 
 .header {
@@ -98,13 +101,13 @@
 }
 
 .profileBtnToggle h6 {
-  color: var(--secondary-text);
+  color: var(--white-text);
   font-size: 12px;
   font-weight: 600;
 }
 
 .profileBtnToggle p {
-  color: var(--secondary-text);
+  color: var(--white-text);
   font-size: 14px;
   font-weight: 500;
 }
@@ -201,7 +204,7 @@
 
 .accesibilities button {
   border: none;
-  background-color: transparent;
+  background-color: transparent !important;
   padding: 0.4rem;
   display: flex;
   align-items: center;
@@ -212,7 +215,7 @@
 .accesibilities .rsrvHeadBtn p {
   margin: 0;
   font-size: 12px;
-  color: var(--light-black);
+  color: var(--white-text);
   font-weight: 500;
 }
 
@@ -294,6 +297,10 @@
   border-radius: 5px;
   padding: 0 0.5rem;
   width: 100%;
+}
+.profileDropdown .profileBtnToggle .togglePBTN {
+  width: 0.9rem;
+  height: 0.8rem;
 }
 
 @media screen and (max-width: 1200px) {

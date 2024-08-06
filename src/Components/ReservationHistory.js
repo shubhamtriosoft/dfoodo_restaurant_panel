@@ -8,9 +8,7 @@ import Childs from "../assets/escalator_warning.svg";
 import { Modal, Button } from "react-bootstrap";
 import DoneGreen from "../assets/doneGreen.svg";
 import Loader from "./Loader.js";
-import ChildY from "../assets/escalator_warning.svg";
-import PetY from "../assets/pets.svg";
-import PersonY from "../assets/account_circle.svg";
+
 import userIcn from "../assets/person_pin_circle.svg";
 import OrngMsg from "../assets/orngMsg.svg";
 import {
@@ -593,7 +591,11 @@ const ReservationHistory = ({ sharedValue }) => {
                   <tr className="historyTableRow" key={index}>
                     <td>
                       <div
-                        style={{ marginLeft: "1rem", fontSize: "14px",marginTop: "1.2rem" }}
+                        style={{
+                          marginLeft: "1rem",
+                          fontSize: "14px",
+                          marginTop: "1.2rem",
+                        }}
                       >
                         {index + 1}
                       </div>

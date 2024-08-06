@@ -6,7 +6,7 @@ import Restro from "../assets/sideRestroBlack.svg";
 import Guest from "../assets/sideGuestBlack.svg";
 import Analytics from "../assets/sideAnalytisBlack.svg";
 import Staff from "../assets/sideStaffBlack.svg";
-import Website from "../assets/sideWebBlack.svg";
+import Logo from "../assets/logoIcon.svg";
 import Report from "../assets/sideReportBlack.svg";
 import Feedback from "../assets/feedNewIcon1.png";
 import HelpSupport from "../assets/sideHelpBlack.svg";
@@ -24,7 +24,7 @@ import dropArroww from "../assets/dropArrow.svg";
 import dropArrowwOrange from "../assets/dropArrowOrange.svg";
 import HelpSupportOrng from "../assets/sideHelpOrng.svg";
 import SettingOrng from "../assets/sideSettingOrng.svg";
-import NewLogo from "../assets/BarleysFoodFactory.png";
+
 import "./Css/SideBar.css";
 import { sidebarpagetext, Hide_Menu_text } from "./../CommonJquery/WebsiteText";
 import { Link, useLocation } from "react-router-dom";
@@ -168,7 +168,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
           <a className="navbar-brand" href="#">
             <div className="headerLogo">
               <div className="headerLogo_contaienr">
-                <img src={NewLogo} alt="Barley's Dashboard" />
+                <img src={Logo} alt="Barley's Dashboard" />
               </div>
             </div>
           </a>
@@ -504,8 +504,6 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                 </div>
               </li>
             </Link>
-
-          
           </ul>
         </div>
       </div>
