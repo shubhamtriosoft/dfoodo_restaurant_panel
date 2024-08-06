@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import { storeData } from "../LocalConnection/LocalConnection.js";
 import { useNavigate } from "react-router-dom";
-import BarleysLog from "../assets/BarleyslogowhitePNG1.png";
+import Logo from "../assets/logoIcon.svg";
 import Cookies from "js-cookie";
 import CryptoJS from "crypto-js";
 function Login() {
@@ -180,11 +180,11 @@ function Login() {
             <div className="loginLeft">
               <div className="loginText">
                 {/* <h1>{loginPagesText.barleys}</h1> */}
-                <img src={BarleysLog} alt="Barley's Food Factory" />
+                <img src={Logo} alt="Barley's Food Factory" />
                 <h5>{loginPagesText.tagLineLogin}</h5>
 
                 <Link to="https://www.barleys.se/">
-                  <button style={{ fontWeight: "500" }}>www.barleys.se</button>
+                  <button style={{ fontWeight: "500" }}>www.Dfoodo.se</button>
                 </Link>
               </div>
             </div>

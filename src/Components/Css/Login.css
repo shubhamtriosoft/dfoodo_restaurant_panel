@@ -107,7 +107,8 @@
   height: 48px;
   border: none;
   border-radius: 10px;
-  color: var(--white-text);
+  color: var(--white-text) !important;
+
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 

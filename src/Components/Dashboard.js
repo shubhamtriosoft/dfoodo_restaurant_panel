@@ -2306,7 +2306,7 @@ function Dashboard() {
                 }`}
                 onClick={() => hideOverlay()}
               ></div>
-              {showLoaderAdmin && <Loader />}
+              {/* {showLoaderAdmin && <Loader />} */}
               <div className="row m-0">
                 <div
                   className={` col-sm-7 canvasColumn ${
