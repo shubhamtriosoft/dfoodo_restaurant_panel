@@ -75,6 +75,7 @@ function GuestMngmt() {
     fd.append("search_data", document.getElementById("search_data").value);
     await server_post_data(get_all_guestInformation, fd)
       .then((Response) => {
+        console.log(Response.data.message)
         if (Response.data.error) {
           handleError(Response.data.message);
         } else {

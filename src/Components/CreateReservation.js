@@ -591,6 +591,7 @@ function CreateReservation() {
   ) => {
     let vaild_data = check_vaild_save(form_data);
     const isValiddd = isPhoneValid(phone);
+    console.log(phone)
     setisValid(isValiddd);
     if (vaild_data && isValiddd) {
       if (location.pathname.includes("/Create_WalkIn")) {
@@ -634,13 +635,13 @@ function CreateReservation() {
     let vaild_data = check_vaild_save(form_data);
     const isValiddd = isPhoneValid(phone);
     setisValid(isValiddd);
-
+    console.log(phone)
     if (vaild_data && isValiddd) {
       let fd_from = combiled_form_data(form_data, null);
       fd_from.append("left_position", "");
       setshowLoaderAdmin(true);
       fd_from.append("reservation_id", reservation_id);
-      fd_from.append("guest_mobile_no", phone.replace(/\+/g, ""));
+      fd_from.append("guest_mobile_no", phone);
       fd_from.append("book_date", selecteddate);
       fd_from.append("call_time", call_time);
       fd_from.append(
@@ -1242,7 +1243,7 @@ function CreateReservation() {
         table_type_with_chair
       )
         .then((group) => {
-          canvas.add(group).setActiveObject(group);
+          canvas.add(group);
           setCanvasManupult((prevState) => {
             if (prevState != null) {
               return {
@@ -1309,7 +1310,7 @@ function CreateReservation() {
         table_type_with_chair
       )
         .then((group) => {
-          canvas.add(group).setActiveObject(group);
+          canvas.add(group);
           setCanvasManupult((prevState) => {
             if (prevState != null) {
               return {
