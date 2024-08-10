@@ -1004,7 +1004,7 @@ function Dashboard() {
         table_type_with_chair
       )
         .then((group) => {
-          canvas.add(group).setActiveObject(group);
+          canvas.add(group);
           setCanvasManupult((prevState) => {
             if (prevState != null) {
               return {
@@ -1071,7 +1071,7 @@ function Dashboard() {
         table_type_with_chair
       )
         .then((group) => {
-          canvas.add(group).setActiveObject(group);
+          canvas.add(group);
           setCanvasManupult((prevState) => {
             if (prevState != null) {
               return {

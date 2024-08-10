@@ -12,6 +12,7 @@ import {
   handlePasswordChange,
   check_vaild_save,
   combiled_form_data,
+  handleLinkClick,
 } from "../CommonJquery/CommonJquery";
 import { Link } from "react-router-dom";
 import { storeData } from "../LocalConnection/LocalConnection.js";
@@ -107,7 +108,7 @@ function Login() {
             );
             storeData("restaurant_name", Response_restaurant.restaurant_name);
             storeData("wowreview_key", Response_restaurant.wowreview_key);
-
+            handleLinkClick("/Dashboard")
             if (rememberMe) {
               const encryptedEmail = CryptoJS.AES.encrypt(
                 Response_data.admin_email,
