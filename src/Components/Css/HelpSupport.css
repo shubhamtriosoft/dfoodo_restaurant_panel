@@ -363,7 +363,7 @@
 }
 
 .go_to_login:hover {
-  background: linear-gradient(to right, #800080, #fc9e4c);
+  background: linear-gradient(to right,var(--primary-color), var(--primary-color));
   color: #ffffff;
   font-weight: 700;
   padding: 0.4rem 0;

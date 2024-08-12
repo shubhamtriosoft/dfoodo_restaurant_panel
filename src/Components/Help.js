@@ -137,7 +137,7 @@ function Help() {
       // Check if the sender contains searchTicket (case insensitive)
       const isSenderMatch =
         searchTicket === "" ||
-        ticket.business_name.toLowerCase().includes(searchTicket.toLowerCase());
+        ticket.restaurant_name.toLowerCase().includes(searchTicket.toLowerCase());
 
       // Return true if both conditions are met
       return isDateInRange && isSenderMatch;
@@ -376,7 +376,7 @@ function Help() {
                       <div className="cutomerImg">
                         <img src={People} alt="icon" />
                       </div>
-                      <p>{ticket.business_name}</p>
+                      <p>{ticket.restaurant_name}</p>
                     </div>
                     <div className="ticketsListItemfootRight flexBtns">
                       <div>
