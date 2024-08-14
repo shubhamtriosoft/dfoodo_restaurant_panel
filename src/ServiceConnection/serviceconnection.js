@@ -47,7 +47,7 @@ const sava_update_table_position = local_server_link_react + "save_tablesetup";
 const delete_tablesetup = local_server_link_react + "delete_tablesetup";
 
 const save_new_resturant = local_server_link_react + "save_new_resturant";
-const get_all_new_resturant = local_server_link_react + "get_all_new_resturant";
+const get_all_new_resturant = local_server_link_react + "get_all_new_resturant_vendor";
 const action_update_resturant =
   local_server_link_react + "action_update_resturant";
 
