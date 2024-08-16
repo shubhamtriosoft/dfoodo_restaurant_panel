@@ -121,7 +121,7 @@ const ViewStaffPagesText = {
 //login page
 const loginPagesText = {
   barleys: "Barley's",
-  tagLineLogin: "The most popular Restaurant in Sweden",
+  tagLineLogin: "Your Table Awaits – Discover, Book, Dine with DFoodo",
   gotoWebBtn: "Go to website",
   login: "Login",
   forgotPassword: "Forgot your password?",

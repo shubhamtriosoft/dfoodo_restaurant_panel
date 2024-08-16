@@ -184,7 +184,7 @@ function Login() {
                 <img src={Logo} alt="Barley's Food Factory" />
                 <h5>{loginPagesText.tagLineLogin}</h5>
 
-                <Link to="https://www.barleys.se/">
+                <Link to="https://dfoodo.triosoft.ai/">
                   <button style={{ fontWeight: "500" }}>www.Dfoodo.se</button>
                 </Link>
               </div>
