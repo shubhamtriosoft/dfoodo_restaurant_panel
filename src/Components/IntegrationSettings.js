@@ -179,7 +179,7 @@ function IntegrationSettings() {
             </div>
             <div className="col-lg-7 col-md-8">
               <div className="intergerInputDiv " style={{height:"400px"}}>
-                <label>Delivery Url *</label>
+                <label>Restaurant About *</label>
                 <div className="delivery-scooter image_icon_position1  h-80"  style={{height:"400px"}}>
                   <textarea
                     // type="text"
