@@ -35,6 +35,7 @@ function ReservationSettings() {
           if (Response.data.error) {
             handleError(Response.data.message);
           } else {
+            console.log(Response.data.message)
             setreservationsettings(Response.data.message.data[0]);
             if (Response.data.message.data[0].booking_slot_interval == 30) {
               setActiveSlotsTime(false);
@@ -207,6 +208,37 @@ function ReservationSettings() {
                   defaultValue={
                     reservationsettings
                       ? reservationsettings["table_turnover"]
+                      : ""
+                  }
+                />
+                <span className="condition_error"></span>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <label className="settingsLael">
+                <span>Discount Upto *</span>
+                <button
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  htmlFor="top"
+                  type="button"
+                  title={`Specify the duration for each table's occupancy. Once this time elapses, the table will be available for the next booking.`}
+                >
+                  <img src={InfoIcon} alt="Barley's Dashboard" />
+                </button>
+              </label>
+              <div className="BeforeTime image_icon_position1">
+                <input
+                  type="text"
+                  name="discount_upto"
+                  placeholder={"Table Turnover Time *"}
+                  maxLength={3}
+                  minLength={1}
+                  className="form-control trio_mandatory input_field_custom2 "
+                  onInput={(e) => handleNumbersChange(e)}
+                  defaultValue={
+                    reservationsettings
+                      ? reservationsettings["discount_upto"]
                       : ""
                   }
                 />

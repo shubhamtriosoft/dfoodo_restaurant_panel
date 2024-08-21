@@ -9,6 +9,7 @@ import {
   handleSuccess,
   handleError,
   handleURLChange,
+  handleAphabetsChange,
 } from "../CommonJquery/CommonJquery";
 import Loader from "./Loader.js";
 import {
@@ -172,7 +173,31 @@ function IntegrationSettings() {
                   <span className="condition_error"></span>
                 </div>
               </div>
+              
+              
 
+            </div>
+            <div className="col-lg-7 col-md-8">
+            <div className="intergerInputDiv " style={{height:"400px"}}>
+                <label>Delivery Url *</label>
+                <div className="delivery-scooter image_icon_position1  h-80"  style={{height:"400px"}}>
+                  <textarea
+                    // type="text"
+                    name="restaurant_about"
+                    placeholder={"About Restaurant"}
+                    onInput={handleAphabetsChange}
+                    onChange={handleSaveUrlChange}
+                    className="form-control trio_mandatory input_field_custom2 " 
+                    defaultValue={
+                      reservationsettings
+                        ? reservationsettings["restaurant_about"]
+                        : ""
+                    }
+                  ></textarea>
+                  <span className="condition_error"></span>
+                </div>
+              </div>
+            </div>
               <div className="saveFormBtns">
                 <button className="btnCancel" type="hidden">
                   Cancel
@@ -190,7 +215,6 @@ function IntegrationSettings() {
                   Update
                 </button>
               </div>
-            </div>
           </div>
         </form>
       </div>
