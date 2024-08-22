@@ -255,7 +255,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                 </div>
               </li>
             </Link>
-            <Link to="/View_Guest">
+            {/* <Link to="/View_Guest">
               <li
                 className={`guest_mngmt ${Triosidebarhideshow(
                   "Guest_Management"
@@ -275,7 +275,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                   <p>{sidebarpagetext.Guest_Mgmt_text}</p>
                 </div>
               </li>
-            </Link>
+            </Link> */}
             <li className="dropdown sidebarDropdown staff_mngmt">
               <div
                 data-bs-toggle="dropdown"

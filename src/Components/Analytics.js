@@ -1404,10 +1404,10 @@ function Analytics() {
                               </div>
                               <div className="numberPercent">
                                 <h5>{GraphStatics.total_no_of_guest_sum}</h5>
-                              
                               </div>
                             </div>
-                          </div><div className="col-md-2 paddingLeft1200">
+                          </div>
+                          <div className="col-md-2 paddingLeft1200">
                             <div className="analyticsCard">
                               <div className="textInfo">
                                 <p>{Analytics_text.no_of_child}</p>
@@ -1425,10 +1425,10 @@ function Analytics() {
                               </div>
                               <div className="numberPercent">
                                 <h5>{GraphStatics.total_no_of_child_sum}</h5>
-                              
                               </div>
                             </div>
-                          </div><div className="col-md-2 paddingLeft1200">
+                          </div>
+                          <div className="col-md-2 paddingLeft1200">
                             <div className="analyticsCard">
                               <div className="textInfo">
                                 <p>{Analytics_text.no_of_pets}</p>
@@ -1446,7 +1446,6 @@ function Analytics() {
                               </div>
                               <div className="numberPercent">
                                 <h5>{GraphStatics.total_no_of_pets_sum}</h5>
-                              
                               </div>
                             </div>
                           </div>
@@ -1849,7 +1848,11 @@ function Analytics() {
                         <div className="col-md-3">
                           <div className="bargrapghCard">
                             <p>{Analytics_text.Total_Revenue}</p>
-                            <h5>Kr {GraphStatics.total_payout_amt_sum}</h5>
+                            <h5>
+                              {CardData.data_money_left}
+                              {GraphStatics.total_payout_amt_sum}
+                              {CardData.data_money_right}{" "}
+                            </h5>
                           </div>
                         </div>
                         <div className="bargrapghTextRow2">
