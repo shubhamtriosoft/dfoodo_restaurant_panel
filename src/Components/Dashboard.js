@@ -100,6 +100,7 @@ let select_option_str = "";
 let tablearrayRED; //code by mk
 let reservationTableFree = {}; //code by mk
 function Dashboard() {
+  const default_restaurant_id = retrieveData("default_restaurant_id");
   let reservation_date = computeTodayDate();
   const [showLoaderAdmin, setshowLoaderAdmin] = useState(false);
   const [SelectedTableForBooking, setSelectedTableForBooking] = useState([]);
@@ -1535,7 +1536,7 @@ function Dashboard() {
   /////////////////////// Firebase Notification Start ///////////////////
   const [shownotification, setshownotification] = useState(false);
   const db = getFirestore();
-  const collectionRef = doc(db, "notification_start", "always_update_data");
+  const collectionRef = doc(db, "notification_start", "always_update_data"+default_restaurant_id);
 
   // Set up Firestore listener to listen for changes in the document
   useEffect(() => {
