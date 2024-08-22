@@ -466,3 +466,6 @@
   display: flex !important;
   gap: 1rem !important;
 }
+.cutomerImg{
+  width: 25px;
+}
