@@ -1,7 +1,7 @@
 <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="44.5" cy="44.5" r="32.5" fill="#A098AE"/>
-<path d="M36 10C36 10 40.9799 9 44.5 9C48.0201 9 53 10 53 10" stroke="#3268C1" stroke-width="3" stroke-linecap="round"/>
-<path d="M53 79C53 79 48.0201 80 44.5 80C40.9799 80 36 79 36 79" stroke="#3268C1" stroke-width="3" stroke-linecap="round"/>
-<path d="M10 53C10 53 9 48.0201 9 44.5C9 40.9799 10 36 10 36" stroke="#3268C1" stroke-width="3" stroke-linecap="round"/>
-<path d="M79 36C79 36 80 40.9799 80 44.5C80 48.0201 79 53 79 53" stroke="#3268C1" stroke-width="3" stroke-linecap="round"/>
+<path d="M36 10C36 10 40.9799 9 44.5 9C48.0201 9 53 10 53 10" stroke="#434242" stroke-width="3" stroke-linecap="round"/>
+<path d="M53 79C53 79 48.0201 80 44.5 80C40.9799 80 36 79 36 79" stroke="#434242" stroke-width="3" stroke-linecap="round"/>
+<path d="M10 53C10 53 9 48.0201 9 44.5C9 40.9799 10 36 10 36" stroke="#434242" stroke-width="3" stroke-linecap="round"/>
+<path d="M79 36C79 36 80 40.9799 80 44.5C80 48.0201 79 53 79 53" stroke="#434242" stroke-width="3" stroke-linecap="round"/>
 </svg>

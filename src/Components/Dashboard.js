@@ -361,7 +361,13 @@ function Dashboard() {
     //     click_yes = false;
     //   }
     // }
-
+    if (change_date === computeTodayDate()) {
+      $("#today_text_show").addClass("primarycode");
+      $("#today_text_show").removeClass("graycode");
+    } else {
+      $("#today_text_show").removeClass("primarycode");
+      $("#today_text_show").addClass("graycode");
+    }
     if (click_yes) {
       reservation_date = change_date;
       setStartDate(change_date);
@@ -2454,7 +2460,11 @@ function Dashboard() {
                     </div>
                     <div className="gotoday">
                       <div className="gotodayContainer">
-                        <p onClick={() => SelectedDateChange("", "now")}>
+                        <p
+                          onClick={() => SelectedDateChange("", "now")}
+                          className="primarycode"
+                          id="today_text_show"
+                        >
                           TODAY
                         </p>
                         <button

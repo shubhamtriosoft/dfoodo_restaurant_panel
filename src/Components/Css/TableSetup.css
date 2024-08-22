@@ -377,7 +377,7 @@ input[type="number"] {
 }
 
 .rsrvFilterTabActive p {
-  color: var(--primary-color) !important;
+  color: var(--pending-bg) !important;
 }
 
 .resrvListDetailsText {

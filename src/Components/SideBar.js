@@ -6,7 +6,7 @@ import Restro from "../assets/sideRestroBlack.svg";
 import Guest from "../assets/sideGuestBlack.svg";
 import Analytics from "../assets/sideAnalytisBlack.svg";
 import Staff from "../assets/sideStaffBlack.svg";
-import Logo from "../assets/logoIcon.svg";
+import Logo from "../assets/logoIcondrak.svg";
 import Report from "../assets/sideReportBlack.svg";
 import Feedback from "../assets/feedNewIcon1.png";
 import HelpSupport from "../assets/sideHelpBlack.svg";
@@ -36,6 +36,7 @@ import {
   server_post_data,
   get_all_StaffRights,
 } from "../ServiceConnection/serviceconnection.js";
+import { handleLinkClick } from "../CommonJquery/CommonJquery";
 function SideBar({ isSidebarOpen, toggleSidebar }) {
   const location = useLocation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -233,7 +234,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                 </div>
               </li>
             </Link>
-            <Link to="/Reservation_Calendar">
+            <Link onClick={() => handleLinkClick("/Reservation_Calendar")}>
               <li className={`reservation_mngmt`}>
                 <div
                   className={`sidebar_list_item ${

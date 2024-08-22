@@ -12,9 +12,7 @@ import {
   get_all_new_resturant,
   APL_LINK,
 } from "../ServiceConnection/serviceconnection.js";
-import {
-  handleError,
-} from "../CommonJquery/CommonJquery";
+import { handleError } from "../CommonJquery/CommonJquery";
 
 function RestaurantSetup() {
   const [showLoaderAdmin, setshowLoaderAdmin] = useState(false);
@@ -57,158 +55,102 @@ function RestaurantSetup() {
       });
   };
 
-  const master_data_action_update = async (call_id, for_status_final) => {
-    setshowLoaderAdmin(true);
-    const fd = new FormData();
-
-    fd.append("id_for_delete", call_id);
-    fd.append("flag_for", "1");
-    fd.append("for_status_final", for_status_final);
-    await server_post_data(action_update_resturant, fd)
-      .then((Response) => {
-        setshowLoaderAdmin(false);
-        console.log(Response.data);
-        if (Response.data.error) {
-          handleError(Response.data.message);
-        } else {
-          master_data_get("", "", "1", "0");
-        }
-      })
-      .catch((error) => {
-        handleError("network");
-        setshowLoaderAdmin(false);
-      });
-  };
-
   return (
     <div className="dashboard">
-      {showLoaderAdmin && (
-        <Loader />
-      )}
+      {showLoaderAdmin && <Loader />}
 
       <div className="dashboard_container">
         <div className="page_content">
           <div className="page_content_container">
             <Header />
             <div className="pageCntn_head">
-              <div className="pageCntn_head_left">
-                {/* <div className="pageNameDiv">
-                  <p>{FloorPlanMngmntPage.Floor_Management} </p>
-                  <img src={GreyArrow} alt="Barley's Dashboard" />
-                </div> */}
-              </div>
+              <div className="pageCntn_head_left"></div>
             </div>
 
             <div className="page_body height80 container-lg">
-              {noRestroAdded === "0" && (
-                <div className="createRestro">
-                  <div className="no_restroContainer">
-                    <div className="no_restroImg">
-                      <img src={NORestro} alt="Barley's Dashboard" />
-                      <Link to="/Create_Restaurant">
-                        <button className="createRetroBtn Create_Restaurant">
-                          Create Restaurant
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )}
-              {noRestroAdded === "1" && (
-                <div className="view_restroCOntainer">
-                  <Link to="/Create_Restaurant">
-                    <button
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="left"
-                      title="Add Restaurant"
-                      className="createDiningArea createRestaurant Add_Restaurant"
-                    >
-                      Add Restraurant
-                    </button>
-                  </Link>
-                  <div className="restroView_table">
-                    <div className="restroView_table_Container">
-                      <table className="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Restaurant Details</th>
-                            <th scope="col">Contact Details</th>
-                            <th scope="col">Email</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {editStaffData.map((option, index) => (
-                            <>
-                              <React.Fragment key={index}>
-                                <tr className="tableRow tbodyStyle">
-                                  <td className="th1">
-                                    <div className="rsvnDetails saparator1">
-                                      <div className="rsvnDetailsImg">
+              <div className="view_restroCOntainer">
+                <div className="restroView_table">
+                  <div className="restroView_table_Container">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Restaurant Details</th>
+                          <th scope="col">Contact Details</th>
+                          <th scope="col">Email</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {editStaffData.map((option, index) => (
+                          <>
+                            <React.Fragment key={index}>
+                              <tr className="tableRow tbodyStyle">
+                                <td className="th1">
+                                  <div className="rsvnDetails saparator1">
+                                    <div className="rsvnDetailsImg">
+                                      <img
+                                        src={
+                                          StaffImageLinkData +
+                                          option.restaurant_image
+                                        }
+                                        onError={(e) =>
+                                          (e.target.src = EmployeeImg)
+                                        }
+                                        alt="Barley's Dashboard"
+                                      />
+                                    </div>
+                                    <div className="rsvnDetailsText">
+                                      <h6>{option.restaurant_name}</h6>
+                                      <p>{option.restaurant_tagline}</p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="rsvnDetails">
+                                    <div className="rsvnContactDetails">
+                                      <p>{option.restaurant_mobile_no}</p>
+                                      {option.restaurant_other_no.length >
+                                        2 && (
+                                        <p>{option.restaurant_other_no}</p>
+                                      )}
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="rsvnDetails">
+                                    <div className="rsvnContactDetails">
+                                      <p>{option.restaurant_email}</p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td className="th2">
+                                  <div className="rsvnDetails">
+                                    <Link
+                                      to={`/edit_restaurants/${option.primary_id}`}
+                                    >
+                                      <button className="editRestroBtn Edit_Restro">
                                         <img
-                                          src={
-                                            StaffImageLinkData +
-                                            option.restaurant_image
-                                          }
-                                          onError={(e) =>
-                                            (e.target.src = EmployeeImg)
-                                          }
+                                          src={Editred}
                                           alt="Barley's Dashboard"
                                         />
-                                      </div>
-                                      <div className="rsvnDetailsText">
-                                        <h6>{option.restaurant_name}</h6>
-                                        <p>{option.restaurant_tagline}</p>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div className="rsvnDetails">
-                                      <div className="rsvnContactDetails">
-                                        <p>{option.restaurant_mobile_no}</p>
-                                        {option.restaurant_other_no.length >
-                                          2 && (
-                                          <p>{option.restaurant_other_no}</p>
-                                        )}
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div className="rsvnDetails">
-                                      <div className="rsvnContactDetails">
-                                        <p>{option.restaurant_email}</p>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td className="th2">
-                                    <div className="rsvnDetails">
-                                      <Link
-                                        to={`/edit_restaurants/${option.primary_id}`}
-                                      >
-                                        <button className="editRestroBtn Edit_Restro">
-                                          <img
-                                            src={Editred}
-                                            alt="Barley's Dashboard"
-                                          />
-                                          <p>Edit</p>
-                                        </button>
-                                      </Link>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr
-                                  //   key={`spacer-${index}`}
-                                  style={{ height: "1rem" }}
-                                ></tr>
-                              </React.Fragment>
-                            </>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
+                                        <p>Edit</p>
+                                      </button>
+                                    </Link>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr
+                                //   key={`spacer-${index}`}
+                                style={{ height: "1rem" }}
+                              ></tr>
+                            </React.Fragment>
+                          </>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>

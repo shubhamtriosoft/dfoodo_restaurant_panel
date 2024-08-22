@@ -5,7 +5,7 @@ import decorativeicon from "../assets/decorative.svg";
 const backgroundColor_main = "#FFF8F2";
 const tableFill_main = "#A098AE";
 const tableFill_main_dark = "#8fce00";
-const barFill_main = "#3268C1";
+const barFill_main = "#434242";
 const blocked_main = "#212121";
 const white_main = "#FFFFFF";
 const runining_table = "#509d30";
