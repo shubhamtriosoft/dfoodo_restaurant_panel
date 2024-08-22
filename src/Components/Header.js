@@ -49,7 +49,7 @@ function Header() {
   const designation_name = retrieveData("designation_name");
   const admin_image = retrieveData("admin_image");
   const restaurant_name = retrieveData("restaurant_name");
-  const restaurant_image = retrieveData("restaurant_image");
+  const default_restaurant_id = retrieveData("default_restaurant_id");
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ function Header() {
       retrievedDataFind === null ||
       retrievedDataFind === "1"
     ) {
-      // navigate("/");
+      navigate("/");
     }
     if (
       retrivemsg !== "" &&
@@ -80,12 +80,17 @@ function Header() {
   /////////////////////// Firebase Notification Start ///////////////////
   const [shownotification, setshownotification] = useState(false);
   const db = getFirestore();
-  const collectionRef = doc(db, "notification_start", "always_update_data");
+  const collectionRef = doc(
+    db,
+    "notification_start",
+    "always_update_data" + default_restaurant_id
+  );
 
   // Set up Firestore listener to listen for changes in the document
   useEffect(() => {
     const unsubscribe = onSnapshot(collectionRef, async (docSnapshot) => {
       if (docSnapshot.exists()) {
+        console.log("come to ddddd")
         const data = docSnapshot.data();
         if (
           data.data_update === 1 &&

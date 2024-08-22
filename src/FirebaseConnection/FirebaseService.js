@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvVO9_k-A76H4ZaaafLcDapEKAGvgcwJ0",
-  authDomain: "barlays-dashboard.firebaseapp.com",
-  projectId: "barlays-dashboard",
-  storageBucket: "barlays-dashboard.appspot.com",
-  messagingSenderId: "882603137272",
-  appId: "1:882603137272:web:ebc105e2222c4cc1b4c30d",
-  measurementId: "G-11FQG9CX1C",
+  apiKey: "AIzaSyDXNe9s5Mq9aKGytBlAycyY224wyvI8yf4",
+  authDomain: "dfoodo2024.firebaseapp.com",
+  projectId: "dfoodo2024",
+  storageBucket: "dfoodo2024.appspot.com",
+  messagingSenderId: "186101617757",
+  appId: "1:186101617757:web:c0ad1d41f343e521a7e9b4",
+  measurementId: "G-DTE6272F9Q"
 };
 
 firebase.initializeApp(firebaseConfig);
