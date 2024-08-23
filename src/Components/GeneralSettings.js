@@ -290,10 +290,14 @@ function GeneralSettings() {
                             <select
                               name={`${meal.starttime_name}`}
                               className="trio_mandatory form-control input_field_custom1 start_time"
-                              defaultValue={meal.starttime_value.substring(
-                                0,
-                                meal.starttime_value.length - 3
-                              )}
+                              defaultValue={
+                                meal.starttime_value
+                                  ? meal.starttime_value.substring(
+                                      0,
+                                      meal.starttime_value.length - 3
+                                    )
+                                  : ""
+                              }
                             >
                               {timingData.map((mealtttt, index) => (
                                 <option value={mealtttt}>{mealtttt}</option>
@@ -306,10 +310,14 @@ function GeneralSettings() {
                             <select
                               name={`${meal.endtime_name}`}
                               className="trio_mandatory form-control input_field_custom1 end_time"
-                              defaultValue={meal.endtime_value.substring(
-                                0,
-                                meal.endtime_value.length - 3
-                              )}
+                              defaultValue={
+                                meal.endtime_value
+                                  ? meal.endtime_value.substring(
+                                      0,
+                                      meal.endtime_value.length - 3
+                                    )
+                                  : ""
+                              }
                             >
                               {timingData.map((mealtttt, index) => (
                                 <option value={mealtttt}>{mealtttt}</option>
