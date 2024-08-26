@@ -70,13 +70,13 @@
 
 .analyticsCard {
   background-color: var(--light-bg);
-  padding: 1.5rem;
+  padding: 1.0rem;
   border-radius: 6px;
   height: 100%;
 }
 
 .analyticsCard p {
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: var(--light-black);
@@ -339,7 +339,7 @@
 
 @media screen and (max-width: 1200px) {
   .analyticsCard {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.3rem;
   }
 
   .paddingLeft1200 {
@@ -745,7 +745,7 @@
 
 .viewStaff_head {
   position: sticky;
-  top: 131px;
+  top: 148px;
   background-color: var(--primary-bg);
   z-index: 91;
 }
