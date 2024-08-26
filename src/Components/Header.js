@@ -230,6 +230,7 @@ function Header() {
   const master_data_get = async () => {
     const fd = new FormData();
     fd.append("flag", "1");
+    fd.append("from_where", "1");
     await server_post_data(get_all_searchmaster, fd)
       .then((Response) => {
         // console.log(Response.data);
