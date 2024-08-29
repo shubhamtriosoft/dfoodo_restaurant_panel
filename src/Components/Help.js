@@ -137,7 +137,7 @@ function Help() {
       // Check if the sender contains searchTicket (case insensitive)
       const isSenderMatch =
         searchTicket === "" ||
-        ticket.restaurant_name.toLowerCase().includes(searchTicket.toLowerCase());
+        ticket.ticket_body.toLowerCase().includes(searchTicket.toLowerCase());
 
       // Return true if both conditions are met
       return isDateInRange && isSenderMatch;
