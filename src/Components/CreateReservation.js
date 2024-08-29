@@ -643,6 +643,7 @@ function CreateReservation() {
       fd_from.append("reservation_id", reservation_id);
       fd_from.append("guest_mobile_no", phone);
       fd_from.append("book_date", selecteddate);
+      fd_from.append("booking_from", "Dashboard");
       fd_from.append("call_time", call_time);
       fd_from.append(
         "operational_time_detail_id",
