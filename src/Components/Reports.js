@@ -8,12 +8,12 @@ import GuestReport from "./GuestReports";
 function Report() {
   const [reservation, setreservation] = useState(true);
   const [sales, setsales] = useState(false);
-  const [guest, setguest] = useState(false);
+  // const [guest, setguest] = useState(false);
 
   const toggleTabs = (Tab) => {
     setreservation(Tab === "Reservation");
     setsales(Tab === "Sales");
-    setguest(Tab === "Guest");
+    // setguest(Tab === "Guest");
   };
 
   return (
@@ -42,12 +42,12 @@ function Report() {
                   >
                     <p>Sales Report</p>
                   </div>
-                  <div
+                  {/* <div
                     className={`reportTabs ${guest ? "selectedReports" : ""}`}
                     onClick={() => toggleTabs("Guest")}
                   >
                     <p>Guest Report</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ function Report() {
             <div className="page_body px-2 py-1">
               {reservation && <SalesReport />}
               {sales && <ReservationReport />}
-              {guest && <GuestReport />}
+              {/* {guest && <GuestReport />} */}
             </div>
           </div>
         </div>
