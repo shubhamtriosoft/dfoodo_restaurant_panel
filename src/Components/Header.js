@@ -5,14 +5,20 @@ import logicn from "../assets/profileseticn.svg";
 import profileseticn from "../assets/logoutIcn.svg";
 import { Modal, Button } from "react-bootstrap";
 import DashboardImgBlack from "../assets/dashboarddd.svg";
+import DashboardImgWhite from "../assets/dashboardddwh.svg";
 import CalendarImg from "../assets/calndr.svg";
+import CalendarBlImg from "../assets/calndrbl.svg";
 import AddIcon from "../assets/plusE.svg";
+import AddIconBl from "../assets/plusEBl.svg";
 import Walking from "../assets/walkMen.svg";
+import WalkingBl from "../assets/walkMenBl.svg";
 import OpenMenu from "../assets/menu_openWHite.svg";
 import Dummy from "../assets/DummyNew.png";
 import Analytics from "../assets/download.svg";
+import AnalyticsBl from "../assets/downloadBl.svg";
 import Noti from "../assets/notiBlack.svg";
 import SearchIcon from "../assets/megnfineSearc.svg";
+import SearchIconBl from "../assets/megnfineSearcBl.svg";
 import NotificationBar from "./NotificationBar.js";
 import DownArrow from "../assets/dropArrowWHite.svg";
 import SearchImg from "../assets/searchBlackHead.svg";
@@ -90,7 +96,7 @@ function Header() {
   useEffect(() => {
     const unsubscribe = onSnapshot(collectionRef, async (docSnapshot) => {
       if (docSnapshot.exists()) {
-        console.log("come to ddddd")
+        console.log("come to ddddd");
         const data = docSnapshot.data();
         if (
           data.data_update === 1 &&
@@ -341,7 +347,11 @@ function Header() {
                         : ""
                     } `}
                   >
-                    <img src={DashboardImgBlack} alt="Barley's Dashboard" />
+                    {location.pathname === "/Dashboard" ? (
+                      <img src={DashboardImgBlack} alt="Barley's Dashboard" />
+                    ) : (
+                      <img src={DashboardImgWhite} alt="Barley's Dashboard" />
+                    )}
                   </button>
                 </Link>
                 <Link
@@ -359,7 +369,11 @@ function Header() {
                         : ""
                     } `}
                   >
-                    <img src={CalendarImg} alt="Barley's Dashboard" />
+                    {location.pathname === "/Reservation_Calendar" ? (
+                      <img src={CalendarBlImg} alt="Barley's Dashboard" />
+                    ) : (
+                      <img src={CalendarImg} alt="Barley's Dashboard" />
+                    )}
                   </button>
                 </Link>
               </div>
@@ -378,7 +392,11 @@ function Header() {
                   htmlFor="top"
                   title={`Create Reservation`}
                 >
-                  <img src={AddIcon} alt="Barley's Dashboard" />
+                  {location.pathname === "/Create_Reservation" ? (
+                    <img src={AddIconBl} alt="Barley's Dashboard" />
+                  ) : (
+                    <img src={AddIcon} alt="Barley's Dashboard" />
+                  )}
                   <p
                     className={` ${
                       location.pathname === "/Create_Reservation"
@@ -405,7 +423,11 @@ function Header() {
                   htmlFor="top"
                   title={`Create Walk-In Reservation`}
                 >
-                  <img src={Walking} alt="Barley's Dashboard" />
+                  {location.pathname === "/Create_WalkIn" ? (
+                    <img src={WalkingBl} alt="Barley's Dashboard" />
+                  ) : (
+                    <img src={Walking} alt="Barley's Dashboard" />
+                  )}
                   <p
                     className={` ${
                       location.pathname === "/Create_WalkIn"
@@ -441,7 +463,7 @@ function Header() {
               {isSearchActive && (
                 <div className="headSearch" ref={headSearchRef}>
                   <div className="headSearchInput">
-                    <img src={SearchImg} alt="Barley's Dashboard" />
+                    <img src={SearchIconBl} alt="Barley's Dashboard" />
                     <input
                       type="text"
                       placeholder="Search"
@@ -578,7 +600,11 @@ function Header() {
                             : ""
                         } `}
                       >
-                        <img src={Analytics} alt="Barley's Dashboard" />
+                        {location.pathname === "/Analytics" ? (
+                          <img src={AnalyticsBl} alt="Barley's Dashboard" />
+                        ) : (
+                          <img src={Analytics} alt="Barley's Dashboard" />
+                        )}
                       </button>
                     </div>
                   </div>

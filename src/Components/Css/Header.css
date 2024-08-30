@@ -204,7 +204,7 @@
 
 .accesibilities button {
   border: none;
-  background-color: transparent !important;
+  background-color: transparent;
   padding: 0.4rem;
   display: flex;
   align-items: center;
@@ -233,6 +233,10 @@
 
 .selectedHeadBtn {
   background-color: var(--primary-bg) !important;
+}
+
+.selectedHeadBtn p {
+  color: var(--light-black) !important;
 }
 
 .timeANdDateHead {
@@ -638,7 +642,3 @@
   color: var(--primary-color);
 }
 
-.accesibilities .rsrvHeadBtn:hover {
-  background-color: var(--primary-bg);
-  color: var(--white-text);
-}
