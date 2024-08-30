@@ -365,7 +365,7 @@ function ReservationReport() {
     <div className="resvReports">
       {showLoaderAdmin && <Loader />}
       <div className="resvReports_container">
-        <div className="viewStaff_head">
+        <div className="viewStaff_head py-2" style={{top:'131px'}}>
           <div className="row m-0">
             <div
               className={` ${
