@@ -63,6 +63,7 @@
 
 .rsvnDetailsImg img {
   width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -125,4 +126,19 @@
   .saparator1 {
     width: 80%;
   }
+}
+
+.recentReservBtnsddddd {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modalBtnsH button:hover {
+  background-color: var(--primary-color);
+}
+
+.modalBtnsH button:hover p {
+  color: var(--white-text);
 }

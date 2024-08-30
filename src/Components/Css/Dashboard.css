@@ -207,10 +207,3 @@
     display: none;
   }
 }
-
-.primarycode {
-  color: var(--pending-bg)!important;;
-}
-.graycode {
-  color: var(--lightBlack-bg)!important;;
-}

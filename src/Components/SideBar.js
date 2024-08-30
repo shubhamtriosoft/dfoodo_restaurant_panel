@@ -291,6 +291,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                   location.pathname === "/Edit_Sub_Rights" ||
                   location.pathname === "/Create_Inside_Page_Rights" ||
                   location.pathname === "/ViewDesignation" ||
+                  location.pathname === "/Add_Designation" ||
                   location.pathname.includes("/edit_staff")
                     ? "activeSideItem"
                     : " "
@@ -308,6 +309,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                     location.pathname === "/Edit_Sub_Rights" ||
                     location.pathname === "/Create_Inside_Page_Rights" ||
                     location.pathname === "/ViewDesignation" ||
+                    location.pathname === "/Add_Designation" ||
                     location.pathname.includes("/edit_staff")
                       ? StaffOrng
                       : Staff
@@ -404,7 +406,8 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                   location.pathname === "/View_Restaurants" ||
                   location.pathname === "/Floor_Plan_Management" ||
                   location.pathname === "/Create_Restaurant" ||
-                  location.pathname === "/Create_Floor_Plan"
+                  location.pathname === "/Create_Floor_Plan" ||
+                  location.pathname.includes("Edit_Floor_Plan")
                     ? "activeSideItem"
                     : " "
                 }`}
@@ -414,7 +417,8 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                     location.pathname === "/View_Restaurants" ||
                     location.pathname === "/Floor_Plan_Management" ||
                     location.pathname === "/Create_Restaurant" ||
-                    location.pathname === "/Create_Floor_Plan"
+                    location.pathname === "/Create_Floor_Plan" ||
+                    location.pathname.includes("Edit_Floor_Plan")
                       ? RestroOrng
                       : Restro
                   }

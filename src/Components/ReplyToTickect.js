@@ -4,7 +4,7 @@ import "./Css/StaffRights.css";
 import Header from "./Header.js";
 import Success from "../assets/success_gif.gif";
 import Modal from "react-bootstrap/Modal";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 import Loader from "./Loader.js";
 import GreyArrow from "../assets/greyLeftAr.png";
 import {
@@ -21,6 +21,7 @@ import {
   get_all_tickets,
 } from "../ServiceConnection/serviceconnection.js";
 function ReplyToTicket() {
+  const location = useLocation();
   const [showLoaderAdmin, setshowLoaderAdmin] = useState(false);
   const { ticketId } = useParams();
   const [ticketBody, setTicketBody] = useState("");
@@ -51,7 +52,9 @@ function ReplyToTicket() {
             setTicketConversation(
               Response.data.message.ticket_data[0].ticket_details
             );
-            setpriority_status(Response.data.message.ticket_data[0].priority_status)
+            setpriority_status(
+              Response.data.message.ticket_data[0].priority_status
+            );
           }
         }
       })
@@ -98,9 +101,17 @@ function ReplyToTicket() {
             <div className="pageCntn_head container-lg">
               <div className="pageNameDiv">
                 <p>
-                  <p>
-                    Create New Ticket
-                    <img src={GreyArrow} alt="Shopup Admin" />
+                  <p className="d-flex align-items-center gap-1">
+                    {location.pathname.includes("Reply_Ticket") ? (
+                      <p>Reply To Ticket</p>
+                    ) : (
+                      <p>Create New Ticket</p>
+                    )}
+                    <img
+                      style={{ height: "15px" }}
+                      src={GreyArrow}
+                      alt="Shopup Admin"
+                    />
                   </p>
                 </p>
 
@@ -121,12 +132,13 @@ function ReplyToTicket() {
                           <div className="ticketsListItemHead">
                             <div className="ticketsListItemHeadLeft">
                               {/* <div className="NewTicket"></div> */}
-                              <p>{ticket.ticket_id}</p>
+                              <p>Ticket: #{ticket.ticket_id}</p>
                             </div>
                             <div className="ticketsListItemHeadRight">
                               <div className="ticketTime">
                                 <p>
-                                  Posted on {formatDateStringdot(ticket.entry_date)}
+                                  Posted on{" "}
+                                  {formatDateStringdot(ticket.entry_date)}
                                 </p>
                               </div>
                             </div>

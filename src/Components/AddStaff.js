@@ -277,7 +277,7 @@ function AddStaff() {
                                       minLength={3}
                                       maxLength={75}
                                       className=" trio_mandatory form-control  input_field_custom1 "
-                                      // onInput={handleAphabetsChange}
+                                      onInput={handleAphabetsChange}
                                       defaultValue={
                                         editStaffData.admin_name || ""
                                       }
@@ -467,7 +467,7 @@ function AddStaff() {
                                       editStaffData.admin_gender || ""
                                     }
                                   >
-                                    <option value={""}>Select Gender</option>
+                                    <option value={""} disabled hidden>Select Gender</option>
                                     {options_gender.map((option) => (
                                       <option
                                         key={option.value}
@@ -521,7 +521,7 @@ function AddStaff() {
                                       editStaffData.admin_blood_group || ""
                                     }
                                   >
-                                    <option value="">
+                                    <option value="" disabled hidden>
                                       {AddStaffPageText.Select_Blood_Group}
                                     </option>
                                     {options_blood_group.map((option) => (
@@ -822,7 +822,7 @@ function AddStaff() {
                                     name="admin_designation"
                                     className="trio_mandatory form-control input_field_custom1"
                                   >
-                                    <option value="">
+                                    <option value="" disabled hidden>
                                       {AddStaffPageText.Select_Designation}
                                     </option>
                                     {designations.map((option, index) => (

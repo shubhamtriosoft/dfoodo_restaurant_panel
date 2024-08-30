@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import FilterIcon from "../assets/filterIcon.png";
 import Search from "../assets/search.png";
 import Person from "../assets/person.png";
@@ -55,6 +55,7 @@ const ReservationHistory = ({ sharedValue }) => {
   const [SelectedReservationBooking, setSelectedReservationBooking] = useState(
     []
   );
+  const searchData = useRef(null);
   const [StaffImageLinkData, setsStaffImageLinkData] = useState("");
   const [noteShow2, setNoteShow2] = useState(false);
   const [flagData, setflagData] = useState("1");
@@ -385,6 +386,7 @@ const ReservationHistory = ({ sharedValue }) => {
 
   const handleSelect = (event) => {
     setSelectedValue(event.target.value); // Update the selected value when an option is selected
+    searchData.current.value = "";
   };
 
   const search_data = () => {
@@ -478,7 +480,7 @@ const ReservationHistory = ({ sharedValue }) => {
     <>
       <div className="reservationHistory">
         {showLoaderAdmin && <Loader />}
-        <div className="viewStaff_head">
+        <div className="viewStaff_head py-2" style={{ top: "131px" }}>
           <div className="row m-0">
             <div className="col-lg-2 col-sm-4 bottomAlgin">
               <label className="labelView">
@@ -530,6 +532,7 @@ const ReservationHistory = ({ sharedValue }) => {
                 <input
                   type="text"
                   id="search_data"
+                  ref={searchData}
                   onInput={(e) => {
                     if (selectedValue === options_search[0].value) {
                       handleAphabetsChange(e);
@@ -576,7 +579,7 @@ const ReservationHistory = ({ sharedValue }) => {
             <table className="table">
               <thead>
                 <tr>
-                  <th scope="col">Sr.No.</th>
+                  <th scope="col">S.No.</th>
                   <th scope="col">Time</th>
                   <th scope="col">Name</th>
                   <th scope="col">Status</th>
@@ -772,10 +775,16 @@ const ReservationHistory = ({ sharedValue }) => {
                           {option.booking_status === 3 && (
                             <>
                               <div className="historyActionsBtns">
-                                <button className="billResrv">
+                                <button
+                                  className="billResrv"
+                                  style={{ cursor: "default" }}
+                                >
                                   Bill No. {option.invoice_no_bill}
                                 </button>
-                                <button className="declineResrv">
+                                <button
+                                  className="declineResrv"
+                                  style={{ cursor: "default" }}
+                                >
                                   {Moneyiconleft}
                                   {option.payout_amt}
                                   {Moneyiconright}

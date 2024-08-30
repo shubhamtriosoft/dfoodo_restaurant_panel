@@ -3,7 +3,7 @@ import "./Css/RestoSetup.css";
 import Header from "./Header";
 import Loader from "./Loader.js";
 import EmployeeImg from "../assets/storeNew1.png";
-import NORestro from "../assets/norestro.png";
+import GreyArrow from "../assets/greyLeftAr.png";
 import { Link } from "react-router-dom";
 import Editred from "../assets/editred.svg";
 import {
@@ -64,7 +64,10 @@ function RestaurantSetup() {
           <div className="page_content_container">
             <Header />
             <div className="pageCntn_head">
-              <div className="pageCntn_head_left"></div>
+              <div className="pageNameDiv">
+                <p>Restaurants View</p>
+                <img src={GreyArrow} alt="Barley's Dashboard" />
+              </div>
             </div>
 
             <div className="page_body height80 container-lg">
@@ -74,7 +77,7 @@ function RestaurantSetup() {
                     <table className="table">
                       <thead>
                         <tr>
-                          <th scope="col">Restaurant Details</th>
+                          <th scope="col">Restaurant Name</th>
                           <th scope="col">Contact Details</th>
                           <th scope="col">Email</th>
                           <th scope="col"></th>

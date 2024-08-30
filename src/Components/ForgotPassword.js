@@ -4,6 +4,7 @@ import DoneSent from "../assets/sentDOne.png";
 import { ForgotPagesText } from "../CommonJquery/WebsiteText";
 import Loader from "./Loader.js";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logoIcon.svg";
 import {
   server_post_data,
   forgot_password,
@@ -48,15 +49,13 @@ function ForgotPassword() {
 
   return (
     <div className="login">
-      {showLoaderAdmin && (
-        <Loader />
-      )}
+      {showLoaderAdmin && <Loader />}
       <div className="login_container">
         <div className="row h-100 m-0">
           <div className="col-lg-7 p-0">
             <div className="loginLeft fgtPasLeft">
               <div className="loginText">
-                <h1>{ForgotPagesText.barleys}</h1>
+                <img src={Logo} alt="Barley's Food Factory" />
                 <h5>{ForgotPagesText.tagLineLogin}</h5>
                 <Link to={Website_URL}>
                   <button>{ForgotPagesText.gotoWebBtn}</button>

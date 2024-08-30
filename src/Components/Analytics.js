@@ -1098,7 +1098,7 @@ function Analytics() {
                 <div className="analytics_container">
                   <div className="row m-0">
                     <div className="col-md-4">
-                      <div className="radilaGraph">
+                      <div className="radilaGraph h-100">
                         <div className="bargrapgh_container m-0">
                           <div className="radilaGraph_container">
                             <div className="donut-container">
@@ -1385,262 +1385,187 @@ function Analytics() {
                             </div>
                           </div>
                         </div>
-                        <div className="row m-0">
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
-                              <div className="textInfo">
-                                <p>{Analytics_text.no_of_guest}</p>
-                                <button
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom"
-                                  htmlFor="top"
-                                  title={`Total No. of Guest`}
-                                >
-                                  <img
-                                    src={InfoIcon}
-                                    alt="Barley's Dashboard"
-                                  />
-                                </button>
-                              </div>
-                              <div className="numberPercent">
-                                <h5>{GraphStatics.total_no_of_guest_sum}</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
-                              <div className="textInfo">
-                                <p>{Analytics_text.no_of_child}</p>
-                                <button
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom"
-                                  htmlFor="top"
-                                  title={`Total No. of Children`}
-                                >
-                                  <img
-                                    src={InfoIcon}
-                                    alt="Barley's Dashboard"
-                                  />
-                                </button>
-                              </div>
-                              <div className="numberPercent">
-                                <h5>{GraphStatics.total_no_of_child_sum}</h5>
+                        <div className="analyticsCardsRow">
+                          <div className="row m-0">
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.no_of_guest}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Total No. of Guest`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{GraphStatics.total_no_of_guest_sum}</h5>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
-                              <div className="textInfo">
-                                <p>{Analytics_text.no_of_pets}</p>
-                                <button
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom"
-                                  htmlFor="top"
-                                  title={`Total No. of Pets`}
-                                >
-                                  <img
-                                    src={InfoIcon}
-                                    alt="Barley's Dashboard"
-                                  />
-                                </button>
-                              </div>
-                              <div className="numberPercent">
-                                <h5>{GraphStatics.total_no_of_pets_sum}</h5>
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.no_of_child}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Total No. of Children`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{GraphStatics.total_no_of_child_sum}</h5>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
-                              <div className="textInfo">
-                                <p>{Analytics_text.Direct_Website}</p>
-                                <button
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom"
-                                  htmlFor="top"
-                                  title={`Reservations From Direct Website`}
-                                >
-                                  <img
-                                    src={InfoIcon}
-                                    alt="Barley's Dashboard"
-                                  />
-                                </button>
-                              </div>
-                              <div className="numberPercent">
-                                <h5>{CardData.total_direct_website}</h5>
-                                <div className="numberPercentGrade" hidden>
-                                  {(() => {
-                                    const show_per = calculateBusinessGrowth(
-                                      CardData.total_direct_website,
-                                      CardData.total_direct_website_past
-                                    );
-                                    return (
-                                      <>
-                                        {show_per > 0 ? (
-                                          <>
-                                            <p>+{show_per}%</p>
-                                            <img src={Upgrade} alt="Upgrade" />
-                                          </>
-                                        ) : (
-                                          <>
-                                            <p>{show_per}%</p>
-                                            <img
-                                              src={Downgrade}
-                                              alt="Downgrade"
-                                            />
-                                          </>
-                                        )}
-                                      </>
-                                    );
-                                  })()}{" "}
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.no_of_pets}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Total No. of Pets`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{GraphStatics.total_no_of_pets_sum}</h5>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
-                              <div className="textInfo">
-                                <p>{Analytics_text.Special_Day_Booking}</p>
-                                <button
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom"
-                                  htmlFor="top"
-                                  title={`Special Day Booking`}
-                                >
-                                  <img
-                                    src={InfoIcon}
-                                    alt="Barley's Dashboard"
-                                  />
-                                </button>
-                              </div>
-                              <div className="numberPercent">
-                                <h5>{CardData.total_spacial_booking}</h5>
-                                <div className="numberPercentGrade" hidden>
-                                  {(() => {
-                                    const show_per = calculateBusinessGrowth(
-                                      CardData.total_spacial_booking,
-                                      CardData.total_spacial_booking_past
-                                    );
-                                    return (
-                                      <>
-                                        {show_per > 0 ? (
-                                          <>
-                                            <p>+{show_per}%</p>
-                                            <img src={Upgrade} alt="Upgrade" />
-                                          </>
-                                        ) : (
-                                          <>
-                                            <p>{show_per}%</p>
-                                            <img
-                                              src={Downgrade}
-                                              alt="Downgrade"
-                                            />
-                                          </>
-                                        )}
-                                      </>
-                                    );
-                                  })()}{" "}
+                        </div>
+                        <div className="analyticsCardsRow">
+                          <div className="row m-0">
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.Direct_Website}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Reservations From Direct Website`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{CardData.total_direct_website}</h5>
+                                  <div className="numberPercentGrade" hidden>
+                                    {(() => {
+                                      const show_per = calculateBusinessGrowth(
+                                        CardData.total_direct_website,
+                                        CardData.total_direct_website_past
+                                      );
+                                      return (
+                                        <>
+                                          {show_per > 0 ? (
+                                            <>
+                                              <p>+{show_per}%</p>
+                                              <img
+                                                src={Upgrade}
+                                                alt="Upgrade"
+                                              />
+                                            </>
+                                          ) : (
+                                            <>
+                                              <p>{show_per}%</p>
+                                              <img
+                                                src={Downgrade}
+                                                alt="Downgrade"
+                                              />
+                                            </>
+                                          )}
+                                        </>
+                                      );
+                                    })()}{" "}
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.Special_Day_Booking}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Special Day Booking`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{CardData.total_spacial_booking}</h5>
+                                  <div className="numberPercentGrade" hidden>
+                                    {(() => {
+                                      const show_per = calculateBusinessGrowth(
+                                        CardData.total_spacial_booking,
+                                        CardData.total_spacial_booking_past
+                                      );
+                                      return (
+                                        <>
+                                          {show_per > 0 ? (
+                                            <>
+                                              <p>+{show_per}%</p>
+                                              <img
+                                                src={Upgrade}
+                                                alt="Upgrade"
+                                              />
+                                            </>
+                                          ) : (
+                                            <>
+                                              <p>{show_per}%</p>
+                                              <img
+                                                src={Downgrade}
+                                                alt="Downgrade"
+                                              />
+                                            </>
+                                          )}
+                                        </>
+                                      );
+                                    })()}{" "}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
-                          <div className="analyticsCard" hidden>
-                            <div className="textInfo">
-                              <p>
-                                {Analytics_text.overlay_text_aggregator + "01"}
-                              </p>
-                              <button
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="bottom"
-                                htmlFor="top"
-                                title={`Aggregator 01`}
-                              >
-                                <img src={InfoIcon} alt="Barley's Dashboard" />
-                              </button>
-                            </div>
-                            <div className="numberPercent">
-                              <h5>{CardData.total_aggregator_1}</h5>
-                              <div className="numberPercentGrade">
-                                {(() => {
-                                  const show_per = calculateBusinessGrowth(
-                                    CardData.total_aggregator_1,
-                                    CardData.total_aggregator_1_past
-                                  );
-                                  return (
-                                    <>
-                                      {show_per > 0 ? (
-                                        <>
-                                          <p>+{show_per}%</p>
-                                          <img src={Upgrade} alt="Upgrade" />
-                                        </>
-                                      ) : (
-                                        <>
-                                          <p>{show_per}%</p>
-                                          <img
-                                            src={Downgrade}
-                                            alt="Downgrade"
-                                          />
-                                        </>
-                                      )}
-                                    </>
-                                  );
-                                })()}{" "}
-                              </div>
-                            </div>
-                          </div>
-                          <div className="analyticsCard" hidden>
-                            <div className="textInfo">
-                              <p>
-                                {Analytics_text.overlay_text_aggregator + "02"}
-                              </p>
-                              <button
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="bottom"
-                                htmlFor="top"
-                                title={`Aggregator 02`}
-                              >
-                                <img src={InfoIcon} alt="Barley's Dashboard" />
-                              </button>
-                            </div>
-                            <div className="numberPercent">
-                              <h5>{CardData.total_aggregator_2}</h5>
-                              <div className="numberPercentGrade">
-                                {(() => {
-                                  const show_per = calculateBusinessGrowth(
-                                    CardData.total_aggregator_2,
-                                    CardData.total_aggregator_2_past
-                                  );
-                                  return (
-                                    <>
-                                      {show_per > 0 ? (
-                                        <>
-                                          <p>+{show_per}%</p>
-                                          <img src={Upgrade} alt="Upgrade" />
-                                        </>
-                                      ) : (
-                                        <>
-                                          <p>{show_per}%</p>
-                                          <img
-                                            src={Downgrade}
-                                            alt="Downgrade"
-                                          />
-                                        </>
-                                      )}
-                                    </>
-                                  );
-                                })()}{" "}
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-md-2 paddingLeft1200">
-                            <div className="analyticsCard">
+                            <div className="analyticsCard" hidden>
                               <div className="textInfo">
-                                <p>{Analytics_text.Dispute}</p>
+                                <p>
+                                  {Analytics_text.overlay_text_aggregator +
+                                    "01"}
+                                </p>
                                 <button
                                   data-bs-toggle="tooltip"
                                   data-bs-placement="bottom"
                                   htmlFor="top"
-                                  title={`Total Dispute`}
+                                  title={`Aggregator 01`}
                                 >
                                   <img
                                     src={InfoIcon}
@@ -1649,12 +1574,12 @@ function Analytics() {
                                 </button>
                               </div>
                               <div className="numberPercent">
-                                <h5>{Statics.totalDisputeSum}</h5>
-                                <div className="numberPercentGrade" hidden>
+                                <h5>{CardData.total_aggregator_1}</h5>
+                                <div className="numberPercentGrade">
                                   {(() => {
                                     const show_per = calculateBusinessGrowth(
-                                      CardData.total_dispute,
-                                      CardData.total_dispute_past
+                                      CardData.total_aggregator_1,
+                                      CardData.total_aggregator_1_past
                                     );
                                     return (
                                       <>
@@ -1675,6 +1600,104 @@ function Analytics() {
                                       </>
                                     );
                                   })()}{" "}
+                                </div>
+                              </div>
+                            </div>
+                            <div className="analyticsCard" hidden>
+                              <div className="textInfo">
+                                <p>
+                                  {Analytics_text.overlay_text_aggregator +
+                                    "02"}
+                                </p>
+                                <button
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="bottom"
+                                  htmlFor="top"
+                                  title={`Aggregator 02`}
+                                >
+                                  <img
+                                    src={InfoIcon}
+                                    alt="Barley's Dashboard"
+                                  />
+                                </button>
+                              </div>
+                              <div className="numberPercent">
+                                <h5>{CardData.total_aggregator_2}</h5>
+                                <div className="numberPercentGrade">
+                                  {(() => {
+                                    const show_per = calculateBusinessGrowth(
+                                      CardData.total_aggregator_2,
+                                      CardData.total_aggregator_2_past
+                                    );
+                                    return (
+                                      <>
+                                        {show_per > 0 ? (
+                                          <>
+                                            <p>+{show_per}%</p>
+                                            <img src={Upgrade} alt="Upgrade" />
+                                          </>
+                                        ) : (
+                                          <>
+                                            <p>{show_per}%</p>
+                                            <img
+                                              src={Downgrade}
+                                              alt="Downgrade"
+                                            />
+                                          </>
+                                        )}
+                                      </>
+                                    );
+                                  })()}{" "}
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-md-4 paddingLeft1200">
+                              <div className="analyticsCard">
+                                <div className="textInfo">
+                                  <p>{Analytics_text.Dispute}</p>
+                                  <button
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    htmlFor="top"
+                                    title={`Total Dispute`}
+                                  >
+                                    <img
+                                      src={InfoIcon}
+                                      alt="Barley's Dashboard"
+                                    />
+                                  </button>
+                                </div>
+                                <div className="numberPercent">
+                                  <h5>{Statics.totalDisputeSum}</h5>
+                                  <div className="numberPercentGrade" hidden>
+                                    {(() => {
+                                      const show_per = calculateBusinessGrowth(
+                                        CardData.total_dispute,
+                                        CardData.total_dispute_past
+                                      );
+                                      return (
+                                        <>
+                                          {show_per > 0 ? (
+                                            <>
+                                              <p>+{show_per}%</p>
+                                              <img
+                                                src={Upgrade}
+                                                alt="Upgrade"
+                                              />
+                                            </>
+                                          ) : (
+                                            <>
+                                              <p>{show_per}%</p>
+                                              <img
+                                                src={Downgrade}
+                                                alt="Downgrade"
+                                              />
+                                            </>
+                                          )}
+                                        </>
+                                      );
+                                    })()}{" "}
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1778,7 +1801,7 @@ function Analytics() {
                         )}
                         {/* >>>>>>> bfb8459a1d6e8a8c8ce03cd08da29965100fcfca */}
                       </div>
-                      <div className="revenueGraph">
+                      <div className="revenueGraph w-100">
                         {selectedGraph1 && (
                           <Chart
                             options={optionsBar}

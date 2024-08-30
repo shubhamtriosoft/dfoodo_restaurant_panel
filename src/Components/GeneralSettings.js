@@ -243,113 +243,119 @@ function GeneralSettings() {
       <div className="general_Settings_container">
         <form className="createForm" id="createForm">
           <div className="row m-0">
-            <div className="col-lg-5 col-md-6">
+            <div className="col-lg-12 col-md-12">
               <div className="mealsTiming">
-                {mealData.map((meal, index) => (
-                  <div className="row m-0 allmeals" key={index} mealkey={index}>
-                    <div className="col-xl-10 col-lg-11">
-                      <div className="mealsTimingCard">
-                        <div className="mealsTimingCard_head">
-                          <h6>{meal.name}</h6>
-                          <div className="no_prsnl_id p-0">
-                            <div className="mealTimeBox">
-                              <input
-                                type="checkbox"
-                                id={`${meal.check_box_name}`}
-                                name={`${meal.check_box_name}`}
-                                defaultChecked={
-                                  meal.check_box_value === 1 && true
-                                }
-                                value={1}
-                                className="hidden-checkbox hidden-checkbox trio_mandatory form-control"
-                                onChange={(e) => {
-                                  handleCheckboxWeekChange(
-                                    e,
-                                    meal.check_box_name
-                                  );
-                                }}
-                              />
+                <div className="row m-0 allmeals">
+                  {mealData.map((meal, index) => (
+                    <>
+                      <div
+                        className="col-xl-3 col-lg-4 col-md-6"
+                        key={index}
+                        mealkey={index}
+                      >
+                        <div className="mealsTimingCard">
+                          <div className="mealsTimingCard_head">
+                            <h6>{meal.name}</h6>
+                            <div className="no_prsnl_id p-0">
+                              <div className="mealTimeBox">
+                                <input
+                                  type="checkbox"
+                                  id={`${meal.check_box_name}`}
+                                  name={`${meal.check_box_name}`}
+                                  defaultChecked={
+                                    meal.check_box_value === 1 && true
+                                  }
+                                  value={1}
+                                  className="hidden-checkbox hidden-checkbox trio_mandatory form-control"
+                                  onChange={(e) => {
+                                    handleCheckboxWeekChange(
+                                      e,
+                                      meal.check_box_name
+                                    );
+                                  }}
+                                />
 
-                              <label
-                                htmlFor={`${meal.check_box_name}`}
-                                className="checkbox-labelTiming checkbox-labelMeal labelCheckbox"
-                              ></label>
+                                <label
+                                  htmlFor={`${meal.check_box_name}`}
+                                  className="checkbox-labelTiming checkbox-labelMeal labelCheckbox"
+                                ></label>
+                                <span className="condition_error"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={`mealsTimingCard_body mealsTimingCard_body${
+                              meal.check_box_name
+                            }  ${
+                              meal.check_box_value === 1 ? "" : "unclickable"
+                            }`}
+                          >
+                            <div className="openCloseInp">
+                              <p>Open</p>
+                              <select
+                                name={`${meal.starttime_name}`}
+                                className="trio_mandatory form-control input_field_custom1 start_time"
+                                defaultValue={
+                                  meal.starttime_value
+                                    ? meal.starttime_value.substring(
+                                        0,
+                                        meal.starttime_value.length - 3
+                                      )
+                                    : ""
+                                }
+                              >
+                                {timingData.map((mealtttt, index) => (
+                                  <option value={mealtttt}>{mealtttt}</option>
+                                ))}
+                              </select>
+                              <span className="condition_error"></span>
+                            </div>
+                            <div className="openCloseInp">
+                              <p>Close</p>
+                              <select
+                                name={`${meal.endtime_name}`}
+                                className="trio_mandatory form-control input_field_custom1 end_time"
+                                defaultValue={
+                                  meal.endtime_value
+                                    ? meal.endtime_value.substring(
+                                        0,
+                                        meal.endtime_value.length - 3
+                                      )
+                                    : ""
+                                }
+                              >
+                                {timingData.map((mealtttt, index) => (
+                                  <option value={mealtttt}>{mealtttt}</option>
+                                ))}
+                              </select>
                               <span className="condition_error"></span>
                             </div>
                           </div>
                         </div>
+                      </div>
+
+                      <div className="col-md-1" hidden>
                         <div
-                          className={`mealsTimingCard_body mealsTimingCard_body${
-                            meal.check_box_name
-                          }  ${
-                            meal.check_box_value === 1 ? "" : "unclickable"
+                          className={`${
+                            index === mealData.length - 1
+                              ? "addMeatRow"
+                              : "addMeatRowHidden"
                           }`}
                         >
-                          <div className="openCloseInp">
-                            <p>Open</p>
-                            <select
-                              name={`${meal.starttime_name}`}
-                              className="trio_mandatory form-control input_field_custom1 start_time"
-                              defaultValue={
-                                meal.starttime_value
-                                  ? meal.starttime_value.substring(
-                                      0,
-                                      meal.starttime_value.length - 3
-                                    )
-                                  : ""
-                              }
-                            >
-                              {timingData.map((mealtttt, index) => (
-                                <option value={mealtttt}>{mealtttt}</option>
-                              ))}
-                            </select>
-                            <span className="condition_error"></span>
-                          </div>
-                          <div className="openCloseInp">
-                            <p>Close</p>
-                            <select
-                              name={`${meal.endtime_name}`}
-                              className="trio_mandatory form-control input_field_custom1 end_time"
-                              defaultValue={
-                                meal.endtime_value
-                                  ? meal.endtime_value.substring(
-                                      0,
-                                      meal.endtime_value.length - 3
-                                    )
-                                  : ""
-                              }
-                            >
-                              {timingData.map((mealtttt, index) => (
-                                <option value={mealtttt}>{mealtttt}</option>
-                              ))}
-                            </select>
-                            <span className="condition_error"></span>
-                          </div>
+                          <button>
+                            <img src={ADdIcon} alt="Barley's Dashboard" />
+                          </button>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="col-md-1" hidden>
-                      <div
-                        className={`${
-                          index === mealData.length - 1
-                            ? "addMeatRow"
-                            : "addMeatRowHidden"
-                        }`}
-                      >
-                        <button>
-                          <img src={ADdIcon} alt="Barley's Dashboard" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                    </>
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-7 col-md-6">
+            <div className="col-lg-12 col-md-12 col-12">
               <div className="menuTHemeContainer">
-                <div className="uplaodfilesDiv">
+                {/* <div className="uplaodfilesDiv">
                   <p>UPLOAD YOUR MENU FILES</p>
 
                   <div className="menuDropZOne">
@@ -368,7 +374,6 @@ function GeneralSettings() {
                         )}
                         <p>Drop Your PDF File here</p>
                         <p>or</p>
-                        {/* <p>{dynaicimageName.name}</p> */}
                       </div>
                       <input
                         name="event_list_image"
@@ -383,7 +388,7 @@ function GeneralSettings() {
                       <label htmlFor="event_list_image">Browse</label>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="saveFormBtns b ">
                   <button className="btnCancel" type="hidden">
                     Cancel

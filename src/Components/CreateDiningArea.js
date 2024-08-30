@@ -1956,7 +1956,7 @@ export default function CreateDiningArea(CALLID) {
                         <div className="editAreaName">
                           <h6 className="subheads p-0">Area Name</h6>
                           <input
-                            className="newAreaName trio_mandatory"
+                            className="newAreaName trio_mandatory form-control"
                             type="text"
                             id="dining_area_name"
                             name="dining_area_name"

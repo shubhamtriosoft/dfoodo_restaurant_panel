@@ -377,7 +377,7 @@ input[type="number"] {
 }
 
 .rsrvFilterTabActive p {
-  color: var(--pending-bg) !important;
+  color: var(--primary-color) !important;
 }
 
 .resrvListDetailsText {
@@ -906,7 +906,7 @@ input[type="number"] {
 }
 
 .guest-name {
-  color: #3268C1;
+  color: #f58634;
 }
 
 .guest-count p {
@@ -1089,7 +1089,9 @@ button.ad {
 
 .notesDoby {
   padding: 3rem !important;
-  margin-top: 3rem !important;
+  padding-top: 1rem !important;
+
+  /* margin-top: 3rem !important; */
 }
 
 .confirmBtnANdDrop button {

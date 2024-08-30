@@ -11,8 +11,9 @@
 
 .navbar-brand {
   background-color: var(--secondary-bg);
-
+  height: 100%;
   margin-right: 0;
+  padding: 1.2rem 0 0.2rem 0;
 }
 
 .headerLogo_contaienr {
@@ -26,7 +27,6 @@
   height: 100%;
   width: 50%;
 }
-
 .header {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   z-index: 20;
@@ -298,10 +298,6 @@
   padding: 0 0.5rem;
   width: 100%;
 }
-.profileDropdown .profileBtnToggle .togglePBTN {
-  width: 0.9rem;
-  height: 0.8rem;
-}
 
 @media screen and (max-width: 1200px) {
   .headSearch input {
@@ -323,6 +319,10 @@
   padding: 0 0.5rem;
   border-radius: 5px;
   border-bottom: 1px solid var(--light-black);
+}
+.profileDropdown .profileBtnToggle .togglePBTN {
+  width: 0.8rem;
+  height: 0.8rem;
 }
 
 @media screen and (max-width: 1020px) {
@@ -364,11 +364,6 @@
 
   .profileLink img {
     width: 2rem;
-  }
-
-  .profileDropdown .profileBtnToggle .togglePBTN {
-    width: 1rem;
-    height: 1rem;
   }
 
   .profileLink,
@@ -421,14 +416,14 @@
 .logoutNoBtn {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  background-color: var(--primary-color);
+  background-color: #ff000096;
   border: none;
 }
 .logoutYesBtn:hover {
   background-color: var(--green-bg);
 }
 .logoutNoBtn:hover {
-  background-color: var(--red-bg);
+  background-color: var(--primary-color);
   border: none;
 }
 /*----Notification Side Bar----*/

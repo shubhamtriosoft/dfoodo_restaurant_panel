@@ -221,7 +221,11 @@ function CreateRestro() {
             <Header />
             <div className="pageCntn_head">
               <div className="pageNameDiv">
-                <p>{create_restaurants.Restaurant_details}</p>
+                {location.pathname.includes("edit_restaurants") ? (
+                  <p>Edit Restaurant Details</p>
+                ) : (
+                  <p>Add Restaurant</p>
+                )}
                 <img src={GreyArrow} alt="Barley's Dashboard" />
               </div>
             </div>
@@ -233,7 +237,7 @@ function CreateRestro() {
                     <div className="col-xl-6 col-lg-7">
                       <div className="personalForm">
                         <div className="staffForm_container">
-                          <div className="row m-0">
+                          <div className="row m-0 mt-3">
                             <div className="col-lg-3 col-md-4 mx-auto">
                               <div
                                 className={

@@ -120,7 +120,7 @@ const ViewStaffPagesText = {
 };
 //login page
 const loginPagesText = {
-  barleys: "Barley's",
+  barleys: "DFOODO",
   tagLineLogin: "Your Table Awaits – Discover, Book, Dine with DFoodo",
   gotoWebBtn: "Go to website",
   login: "Login",

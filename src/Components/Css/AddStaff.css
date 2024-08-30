@@ -5,9 +5,14 @@
 
 .staffForm_container {
   background-color: #f6f5f5;
-  padding: 2rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 10px;
+  margin-top: 1rem;
   box-shadow: 0px 0px 7px 0px #00000040;
+}
+
+.staffForm_containerr {
+  height: 150px;
 }
 
 .inputDiv1 {
@@ -416,15 +421,15 @@ textarea {
   opacity: 0;
 }
 
-.on-off-toggle__input:checked+.on-off-toggle__slider {
+.on-off-toggle__input:checked + .on-off-toggle__slider {
   background-color: var(--lightBlue-bg);
 }
 
-.on-off-toggle__input:checked+.on-off-toggle__slider:before {
+.on-off-toggle__input:checked + .on-off-toggle__slider:before {
   transform: translateX(31px);
 }
 
-.on-off-toggle__input:checked+.on-off-toggle__slider:after {
+.on-off-toggle__input:checked + .on-off-toggle__slider:after {
   content: "Active";
   color: #ffffff;
   padding-left: 8px;
@@ -497,19 +502,19 @@ textarea {
 
 .confirmDeBtn {
   background-color: var(--lightBlack-bg);
-  border: none;
+  border: 1px solid transparent;
 }
 
 .confirmAeBtn {
   background-color: var(--lightBlack-bg);
   border-color: var(--lightBlack-bg);
+  border: 1px solid transparent;
 }
 
 .confirmDeBtn:hover {
   background-color: var(--lightRed-bg);
   border: 1px solid var(--secondary-text);
   color: var(--secondary-color);
-  border: none;
 }
 
 .confirmAeBtn:hover {
@@ -534,6 +539,7 @@ textarea {
 
 .Confirm_Deactive:hover {
   background-color: var(--primary-color);
+  color: var(--white-text) !important;
 }
 
 .closeConfirmAeBtn:hover {
@@ -629,11 +635,11 @@ textarea {
   color: var(--light-text);
 }
 
-.viewGuest_table_container .table> :not(caption)>*>* {
+.viewGuest_table_container .table > :not(caption) > * > * {
   padding-left: 0 !important;
   padding-right: 0 !important;
   border-bottom: none !important;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .viewGuest_table_container tbody tr {
@@ -689,9 +695,10 @@ textarea {
 
 .imgThead {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 0.2rem;
+  padding-left: 0.5rem;
 }
 
 .imgThead img {
@@ -707,7 +714,8 @@ textarea {
   height: 42px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-left: 0.5rem;
 }
 
 .dropDownn {
@@ -725,7 +733,6 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
-
   .personalForm h3,
   .employeForm h3 {
     margin-top: 10px;
@@ -752,8 +759,18 @@ textarea {
   background-color: var(--green-bg) !important;
 }
 
+.vipMarkedred {
+  background-color: var(--lightRed-bg) !important;
+}
+
 .vipMarked p {
   color: var(--white-text);
+}
+.vipMarkedred p {
+  color: var(--white-text);
+}
+.colorred {
+  color: var(--lightRed-bg) !important;
 }
 
 .tabledata {
@@ -873,21 +890,179 @@ textarea {
 .tboday {
   user-select: text !important;
 }
-.guesticon{
+
+.guesticon {
   border: none;
   background: transparent;
   margin: auto;
 }
-
 
 .guest_incenterActions {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.h-90{
+
+.h-90 {
   height: 90% !important;
 }
-.h-26px{
+
+.h-26px {
   height: 26px;
+}
+
+.imgCopyIcon {
+  border: transparent;
+  background-color: transparent;
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.uploadImgs {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
+  button {
+    border: none;
+    color: white;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    border-radius: 30px;
+    background-color: #0087f7;
+  }
+}
+
+.card-header {
+  box-shadow: 0px 0px 7px 0px #00000040;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.dropzone {
+  border: 2px dashed #0087f7;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.dropzone p {
+  font-size: 14px;
+  margin: 0;
+  color: var(--fade-text);
+  font-weight: 500;
+}
+
+.thumbs-container {
+  position: relative;
+  display: flex;
+  /* width: 100%; */
+  flex-direction: row;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+
+  margin-top: 16px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+  }
+}
+
+.upload {
+  height: 50px;
+  width: 50px;
+  opacity: 0.2;
+}
+
+.upladImgLabel {
+  font-size: 13px;
+  color: rgba(128, 128, 128, 0.66);
+}
+
+.thumb {
+  position: relative;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.thumb-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.input-file {
+  display: none;
+}
+
+.remove-icon {
+  background-color: rgba(5, 3, 3, 0.8);
+  position: absolute;
+  z-index: 30;
+  border-radius: 10px;
+  padding: 4px;
+  top: 5px;
+  right: 5px;
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer;
+  border: none !important;
+}
+
+.input_field_custom1_add_restro {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.bodyText p {
+  text-align: left !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.bodyText {
+  width: 100%;
+}
+
+.modal-header .btn-close:focus,
+.modal-header .btn-close:focus-visible {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.card_imagesUpload {
+  position: relative;
+}
+
+.card_imagesUpload  img {
+  border-radius: 3px;
+}
+
+.container_card {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0 !important;
+  border-radius: 50%;
+}
+
+.container_card img {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
 }

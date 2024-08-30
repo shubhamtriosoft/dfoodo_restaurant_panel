@@ -12,10 +12,10 @@
 
 .sidebar_container {
   width: 260px;
-  height: 100vh; /* Set the height to 100vh */
-  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
-  flex-direction: column; /* Ensure the content stacks vertically */
+  flex-direction: column;
 }
 
 .OpneSidebar {
@@ -46,22 +46,22 @@
 }
 
 .sidebar_list ul {
-  font-size: 13px;
+  font-size: 14px;
   list-style: none;
   padding: 0;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 
 .sidebar_list ul .sidebar_list_item {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
   padding: 0.7rem 0.8rem;
   width: 100%;
 }
 
 .sidebar_list ul .sidebar_list_item img {
-  width: 1.2rem;
+  width: 1rem;
 }
 
 .sidebar_list ul .sidebar_list_item p {
@@ -71,16 +71,16 @@
 }
 
 .activeSideItem {
-  background-color: #83808028;
   color: var(--primary-color) !important;
+  border-radius: 10px;
 }
 
 .activeSideItem p {
-  color: var(--primary-color) !important;
+  color: var(--blue-bg) !important;
 }
 
 .sideHeadLogo {
-  height: 66.8px !important;
+  height: 76.8px !important;
   display: flex;
   align-items: center;
   justify-content: center;
