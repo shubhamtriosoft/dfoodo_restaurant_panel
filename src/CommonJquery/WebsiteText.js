@@ -83,7 +83,7 @@ const AddStaffPageText = {
   twitter_link: "Enter Your Twitter Link",
   snapchat_link: "Enter Your Snapchat Link",
   instagram_link: "Enter Your Instagram Link",
-  Temporary_Address: "  Temporary Address",
+  Temporary_Address: "  Temporary Address*",
   Same_Address: "  Same As Permanent Address",
   join_date: "Joining Date*",
   Designation: "Designation*",

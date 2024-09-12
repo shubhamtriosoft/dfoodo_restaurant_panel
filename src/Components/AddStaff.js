@@ -467,7 +467,7 @@ function AddStaff() {
                                       editStaffData.admin_gender || ""
                                     }
                                   >
-                                    <option value={""} disabled hidden>Select Gender</option>
+                                    <option value={" "} disabled hidden>Select Gender</option>
                                     {options_gender.map((option) => (
                                       <option
                                         key={option.value}
@@ -521,7 +521,7 @@ function AddStaff() {
                                       editStaffData.admin_blood_group || ""
                                     }
                                   >
-                                    <option value="" disabled hidden>
+                                    <option value={" "} disabled hidden>
                                       {AddStaffPageText.Select_Blood_Group}
                                     </option>
                                     {options_blood_group.map((option) => (
@@ -707,7 +707,7 @@ function AddStaff() {
                                     onChange={(e) =>
                                       setTemporaryAddress(e.target.value)
                                     }
-                                    className="form-control input_field_custom3 "
+                                    className="trio_mandatory form-control input_field_custom3 "
                                     defaultValue={
                                       editStaffData.admin_temorary_adrress || ""
                                     }
