@@ -140,7 +140,8 @@ function AddStaff() {
     if (parts.length !== 1) {
       call_id = parts[1];
     }
-    const input = document.getElementById("searchInput");
+    try {
+      const input = document.getElementById("searchInput");
     const autocomplete = new window.google.maps.places.Autocomplete(input);
 
     autocomplete.addListener("place_changed", function () {
@@ -171,6 +172,9 @@ function AddStaff() {
       document.getElementById("admin_state").value = state;
       document.getElementById("admin_country").value = country;
     });
+    } catch (error) {
+      console.log(error)
+    }
     master_data_get(start_date, end_date, flag, call_id);
   }, []);
 
