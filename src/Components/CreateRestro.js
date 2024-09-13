@@ -230,7 +230,7 @@ function CreateRestro() {
               </div>
             </div>
 
-            <div className="page_body">
+            <div className="page_body padding0">
               <div className="addStaffForms">
                 <form id="addNewStaff">
                   <div className="row m-0 justify_center">
