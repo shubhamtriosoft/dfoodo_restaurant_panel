@@ -496,7 +496,7 @@ function CreateRestro() {
                                   onInput={handleAphabetsChange}
                                   placeholder={AddStaffPageText.Enter_Country}
                                   defaultValue={
-                                    editStaffData.restaurant_country || "India"
+                                    editStaffData.restaurant_country || ""
                                   }
                                 />
                                 <span className="condition_error"></span>

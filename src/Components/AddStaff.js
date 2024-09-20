@@ -665,7 +665,7 @@ function AddStaff() {
                                   onInput={handleAphabetsChange}
                                   placeholder={AddStaffPageText.Enter_Country}
                                   defaultValue={
-                                    editStaffData.admin_country || "India"
+                                    editStaffData.admin_country || ""
                                   }
                                 />
                                 <span className="condition_error"></span>
