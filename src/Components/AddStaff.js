@@ -142,36 +142,36 @@ function AddStaff() {
     }
     try {
       const input = document.getElementById("searchInput");
-    const autocomplete = new window.google.maps.places.Autocomplete(input);
+      const autocomplete = new window.google.maps.places.Autocomplete(input);
 
-    autocomplete.addListener("place_changed", function () {
-      const place = autocomplete.getPlace();
-      let full_address = place.address_components;
-      let formatted_address = place.formatted_address;
-      let length_data = place.address_components.length;
-      let citys = "";
-      let state = "";
-      let country = "";
-      let tehsil = "";
-      for (let i = 0; i < length_data; i++) {
-        if (full_address[i].types[0] === "administrative_area_level_1") {
-          state = full_address[i].long_name;
-        } else if (full_address[i].types[0] === "country") {
-          country = full_address[i].long_name;
-        } else if (full_address[i].types[0] === "administrative_area_level_2") {
-          citys = full_address[i].long_name;
-        } else if (full_address[i].types[0] === "locality") {
-          tehsil = full_address[i].long_name;
+      autocomplete.addListener("place_changed", function () {
+        const place = autocomplete.getPlace();
+        let full_address = place.address_components;
+        let formatted_address = place.formatted_address;
+        let length_data = place.address_components.length;
+        let citys = "";
+        let state = "";
+        let country = "";
+        let tehsil = "";
+        for (let i = 0; i < length_data; i++) {
+          if (full_address[i].types[0] === "administrative_area_level_1") {
+            state = full_address[i].long_name;
+          } else if (full_address[i].types[0] === "country") {
+            country = full_address[i].long_name;
+          } else if (full_address[i].types[0] === "administrative_area_level_2") {
+            citys = full_address[i].long_name;
+          } else if (full_address[i].types[0] === "locality") {
+            tehsil = full_address[i].long_name;
+          }
         }
-      }
-      if (tehsil !== "") {
-        citys = tehsil;
-      }
-      setPermanentAddress(formatted_address);
-      document.getElementById("admin_city").value = citys;
-      document.getElementById("admin_state").value = state;
-      document.getElementById("admin_country").value = country;
-    });
+        if (tehsil !== "") {
+          citys = tehsil;
+        }
+        setPermanentAddress(formatted_address);
+        document.getElementById("admin_city").value = citys;
+        document.getElementById("admin_state").value = state;
+        document.getElementById("admin_country").value = country;
+      });
     } catch (error) {
       console.log(error)
     }
@@ -367,7 +367,7 @@ function AddStaff() {
                                     className="imgInptImg"
                                   >
                                     {dynaicimage &&
-                                    dynaicimage.event_list_image_show ? (
+                                      dynaicimage.event_list_image_show ? (
                                       <div
                                         className="imgDiv"
                                         htmlFor="event_list_image"
@@ -417,7 +417,7 @@ function AddStaff() {
                                   )}
                                   className={
                                     dynaicimage &&
-                                    dynaicimage.event_list_image_show
+                                      dynaicimage.event_list_image_show
                                       ? "form-control"
                                       : " form-control"
                                   }
